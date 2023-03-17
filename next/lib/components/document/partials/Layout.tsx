@@ -27,7 +27,9 @@ const Layout = ({ children }: LayoutProps) => {
   const [logoTarget, setLogoTarget] = useState<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const clearLogoTarget = () => {
+    const clearLogoTarget = (routePath: string) => {
+      if (routePath === router.asPath) return;
+
       setLogoTarget(null);
     };
 

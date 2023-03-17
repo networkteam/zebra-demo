@@ -61,7 +61,7 @@ const Hero = ({ title, subtitle, description, image }: HeroProps) => {
             <Image
               className="h-full w-full object-contain object-right-top"
               src={image.src}
-              alt={image.alt}
+              alt={image.alt || ''}
               width={image.width}
               height={image.height}
             />

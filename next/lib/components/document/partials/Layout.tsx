@@ -1,6 +1,7 @@
-import { useMeta, useNode } from '@networkteam/zebra';
+import { useMeta, useNode, useSiteNode } from '@networkteam/zebra';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { createContext, useEffect, useState } from 'react';
 
@@ -22,6 +23,7 @@ export const LogoTargetContext = createContext<LogoTargetContextType>({
 
 const Layout = ({ children }: LayoutProps) => {
   const router = useRouter();
+  const site = useSiteNode();
   const node = useNode();
   const { isRootPage } = useMeta();
   const [logoTarget, setLogoTarget] = useState<HTMLDivElement | null>(null);
@@ -46,6 +48,9 @@ const Layout = ({ children }: LayoutProps) => {
         dark: isRootPage,
       })}
     >
+      <Head>
+        <title>{isRootPage ? site.properties.title : `${node.properties.title} – ${site.properties.title}`}</title>
+      </Head>
       <LogoTargetContext.Provider value={{ logoTarget, setLogoTarget }}>
         <Header />
         <motion.div

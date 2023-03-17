@@ -1,5 +1,6 @@
 import ContentHeadline from '../components/content/Headline';
 import ContentHero from '../components/content/Hero';
+import ContentSection from '../components/content/Section';
 import ContentStage from '../components/content/Stage';
 import DocumentFolder from '../components/document/Folder';
 import DocumentPage from '../components/document/Page';
@@ -17,4 +18,5 @@ export const nodeTypes = {
   'Neos.NodeTypes:Headline': ContentHeadline,
   'Zebra.Site:Content.Stage': ContentStage,
   'Zebra.Site:Content.Hero': ContentHero,
+  'Zebra.Site:Content.Section': ContentSection,
 };

@@ -20,7 +20,7 @@
           editorOptions:
             allowEmpty: true
             values:
-              black:
+              dark:
                 label: i18n
               white:
                 label: i18n

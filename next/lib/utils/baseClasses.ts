@@ -39,6 +39,15 @@ const paddingClasses = (node: NeosContentNode) => {
   });
 };
 
+const backgroundColor = (node: NeosContentNode) => {
+  const color = node.properties.backgroundColor;
+
+  return classNames({
+    'bg-dark': color === 'dark',
+    'bg-white': color === 'white',
+  });
+};
+
 export const baseClasses = (node: NeosContentNode) => {
-  return classNames(marginClasses(node), paddingClasses(node));
+  return classNames(marginClasses(node), paddingClasses(node), backgroundColor(node));
 };

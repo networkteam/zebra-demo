@@ -1,9 +1,11 @@
-'Zebra.Site:Content.Section':
+"Zebra.Site:Content.Section":
   superTypes:
-    'Neos.Neos:Content': true
+    "Neos.Neos:Content": true
+    "Zebra.Site:Mixins.ContentMargin": true
+    "Zebra.Site:Mixins.ContentPadding": true
   childNodes:
     content:
-      type: 'Neos.Neos:ContentCollection'
+      type: "Neos.Neos:ContentCollection"
   ui:
     label: i18n
     group: structure

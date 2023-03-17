@@ -1,14 +1,24 @@
-import LogoTarget from './LogoTarget';
+import classNames from 'classnames';
 
 type Props = {
-  children?: React.ReactNode;
   backgroundColor?: string;
+  className?: string;
+  children?: React.ReactNode;
 };
 
-const Section = ({ children, backgroundColor }: Props) => {
+const Section = ({ backgroundColor, className, children }: Props) => {
   return (
-    <section className={`relative z-10${backgroundColor ? `bg-${backgroundColor}` : ''}`} >
-      <div className="relative container px-4 mx-auto">{children}</div>
+    <section
+      className={classNames(
+        'relative z-10',
+        {
+          'bg-dark': backgroundColor === 'dark',
+          'bg-white': backgroundColor === 'white',
+        },
+        className
+      )}
+    >
+      <div className="container relative mx-auto px-4">{children}</div>
     </section>
   );
 };

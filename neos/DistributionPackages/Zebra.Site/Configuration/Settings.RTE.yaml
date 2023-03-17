@@ -1,0 +1,83 @@
+Neos:
+  Neos:
+    nodeTypes:
+      presets:
+        properties:
+          plainText:
+            type: string
+            ui:
+              inlineEditable: true
+              inline:
+                editorOptions:
+                  autoparagraph: false
+                  hyphens: true
+          headline:
+            type: string
+            ui:
+              inlineEditable: true
+              inline:
+                editorOptions:
+                  autoparagraph: false
+                  hyphens: true
+                  linking:
+                    anchor: false
+                    title: false
+                    relNofollow: true
+                    targetBlank: true
+                    assets: true
+                    nodes: true
+                  formatting:
+                    center: true
+                    justify: false
+                    left: true
+                    right: true
+                    h1: false
+                    h2: false
+                    h3: false
+                    p: false
+                    pre: false
+                    removeFormat: false
+                    strong: true
+                    u: false
+                    del: true
+                    em: true
+                    sub: false
+                    sup: false
+                    a: true
+                    ol: false
+                    ul: false
+          richText:
+            type: string
+            ui:
+              inlineEditable: true
+              inline:
+                editorOptions:
+                  autoparagraph: true
+                  linking:
+                    anchor: false
+                    title: false
+                    relNofollow: true
+                    targetBlank: true
+                    assets: true
+                    nodes: true
+                    startingPoint: '/sites'
+                  formatting:
+                    center: false
+                    justify: false
+                    left: false
+                    right: false
+                    h1: false
+                    h2: false
+                    h3: false
+                    p: false
+                    pre: false
+                    removeFormat: true
+                    strong: true
+                    em: true
+                    underline: false
+                    sub: true
+                    sup: true
+                    strikethrough: false
+                    a: true
+                    ol: true
+                    ul: true

@@ -1,0 +1,53 @@
+'Zebra.Site:Mixins.ContentPadding':
+  abstract: true
+  properties:
+    paddingMobile:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: layout
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions: &paddingEditorOptions
+            allowEmpty: true
+            values:
+              topExtraSmall:
+                label: 'Zebra.Site:NodeTypes.Mixins.ContentPadding:properties.padding.selectBoxEditor.values.top-extra-small'
+              topSmall:
+                label: 'Zebra.Site:NodeTypes.Mixins.ContentPadding:properties.padding.selectBoxEditor.values.top-small'
+              topBase:
+                label: 'Zebra.Site:NodeTypes.Mixins.ContentPadding:properties.padding.selectBoxEditor.values.top-base'
+              topLarge:
+                label: 'Zebra.Site:NodeTypes.Mixins.ContentPadding:properties.padding.selectBoxEditor.values.top-large'
+              topExtraLarge:
+                label: 'Zebra.Site:NodeTypes.Mixins.ContentPadding:properties.padding.selectBoxEditor.values.top-extra-large'
+              extraSmall:
+                label: 'Zebra.Site:NodeTypes.Mixins.ContentPadding:properties.padding.selectBoxEditor.values.extra-small'
+              small:
+                label: 'Zebra.Site:NodeTypes.Mixins.ContentPadding:properties.padding.selectBoxEditor.values.small'
+              base:
+                label: 'Zebra.Site:NodeTypes.Mixins.ContentPadding:properties.padding.selectBoxEditor.values.base'
+              large:
+                label: 'Zebra.Site:NodeTypes.Mixins.ContentPadding:properties.padding.selectBoxEditor.values.large'
+              extraLarge:
+                label: 'Zebra.Site:NodeTypes.Mixins.ContentPadding:properties.padding.selectBoxEditor.values.extra-large'
+              bottomExtraSmall:
+                label: 'Zebra.Site:NodeTypes.Mixins.ContentPadding:properties.padding.selectBoxEditor.values.bottom-extra-small'
+              bottomSmall:
+                label: 'Zebra.Site:NodeTypes.Mixins.ContentPadding:properties.padding.selectBoxEditor.values.bottom-small'
+              bottomBase:
+                label: 'Zebra.Site:NodeTypes.Mixins.ContentPadding:properties.padding.selectBoxEditor.values.bottom-base'
+              bottomLarge:
+                label: 'Zebra.Site:NodeTypes.Mixins.ContentPadding:properties.padding.selectBoxEditor.values.bottom-large'
+              bottomExtraLarge:
+                label: 'Zebra.Site:NodeTypes.Mixins.ContentPadding:properties.padding.selectBoxEditor.values.bottom-extra-large'
+    paddingDesktop:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: layout
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions: *paddingEditorOptions

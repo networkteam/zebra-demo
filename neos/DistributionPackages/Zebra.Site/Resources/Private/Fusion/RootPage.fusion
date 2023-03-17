@@ -1,0 +1,15 @@
+prototype(Zebra.Site:Document.RootPage) < prototype(Neos.NodeTypes:Page) {
+  body.content.main = Neos.Neos:ContentCollection {
+    nodePath = 'main'
+  }
+}
+
+prototype(Zebra.Site:Content.Section) < prototype(Neos.Fusion:Component) {
+  renderer = afx`
+    <div class="section">
+      <div class="section__content">
+        SECTION
+      </div>
+    </div>
+  `
+}

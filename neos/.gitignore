@@ -1,0 +1,26 @@
+# Local files used for development used by phpstorm, mac filesystem or other
+.svn
+.idea
+.DS_Store
+*.swp
+*.bck
+nbproject
+/.env
+
+# Files genrated by composer i.e. neos cms files
+/bin/
+/Build/*
+!/Build/deployment
+/Configuration/Settings.yaml*
+/Configuration/Development/Caches.yaml.example
+/Configuration/*/Settings.yaml.example
+/Configuration/README
+/Data/
+/flow
+/flow.bat
+/Packages
+/Readme.rst
+/Upgrading.rst
+/Web/_Resources/
+/Web/index.php
+/Web/.htaccess

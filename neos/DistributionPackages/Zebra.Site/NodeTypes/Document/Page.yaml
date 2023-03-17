@@ -1,0 +1,19 @@
+'Zebra.Site:Document.Page':
+  superTypes:
+    'Neos.Neos:Document': true
+  ui:
+    label: i18n
+    icon: 'icon-file'
+  constraints:
+    nodeTypes:
+      'Zebra.Site:Document.RootPage': false
+      'Zebra.Site:Document.NotFound': false
+  childNodes:
+    main:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': false
+          'Zebra.Site:Content.Stage': true
+          'Zebra.Site:Content.Hero': true
+          'Zebra.Site:Content.Section': true

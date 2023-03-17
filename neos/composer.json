@@ -1,0 +1,66 @@
+{
+    "name": "zebra-demo/neos",
+    "type": "project",
+    "description": "Zebra Demo – Neos",
+    "license": "GPL-3.0-or-later",
+    "support": {
+        "email": "hello@neos.io",
+        "slack": "http://slack.neos.io/",
+        "forum": "https://discuss.neos.io/",
+        "wiki": "https://discuss.neos.io/c/the-neos-project/project-documentation",
+        "issues": "https://github.com/neos/neos-development-collection/issues",
+        "docs": "http://neos.readthedocs.org/",
+        "source": "https://github.com/neos/neos-base-distribution"
+    },
+    "config": {
+        "vendor-dir": "Packages/Libraries",
+        "bin-dir": "bin",
+        "platform": {
+            "php": "8.1"
+        },
+        "allow-plugins": {
+            "neos/composer-plugin": true,
+            "helhum/dotenv-connector": true
+        }
+    },
+    "require": {
+        "neos/neos": "~8.1.0",
+
+        "neos/neos-ui": "@dev",
+        "neos/seo": "~3.0",
+        "neos/redirecthandler-neosadapter": "~4.2",
+        "neos/redirecthandler-databasestorage": "~5.0",
+        "neos/redirecthandler-ui": "~2.4",
+
+        "networkteam/neos-contentapi": "^0.5.0",
+        "networkteam/neos-next": "^0.2.0",
+        "zebra/site": "@dev"
+    },
+    "require-dev": {
+        "neos/buildessentials": "~8.1.0",
+        "mikey179/vfsstream": "^1.6",
+        "phpunit/phpunit": "^9.0",
+        "symfony/css-selector": "~2.0",
+        "neos/behat": "~8.1.0",
+        "helhum/dotenv-connector": "^3.0"
+    },
+    "repositories": {
+        "distributionPackages": {
+            "type": "path",
+            "url": "./DistributionPackages/*"
+        }
+    },
+    "replace": {
+        "typo3/neos-base-distribution": "8.1.2"
+    },
+    "allow-plugins": {
+        "neos/composer-plugin": true,
+        "composer/package-versions-deprecated": true
+    },
+    "scripts": {
+        "post-update-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+        "post-install-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+        "post-package-update": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall",
+        "post-package-install": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall"
+    }
+}

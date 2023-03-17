@@ -1,0 +1,26 @@
+'Zebra.Site:Content.Section':
+  superTypes:
+    'Neos.Neos:Content': true
+  childNodes:
+    content:
+      type: 'Neos.Neos:ContentCollection'
+  ui:
+    label: i18n
+    group: structure
+    icon: icon-stop
+  properties:
+    backgroundColor:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: layout
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            allowEmpty: true
+            values:
+              black:
+                label: i18n
+              white:
+                label: i18n

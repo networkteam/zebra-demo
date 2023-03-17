@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Zebra.Site" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="properties.marginMobile" xml:space="preserve">
+                <source>Space outside mobile</source>
+            </trans-unit>
+            <trans-unit id="properties.marginDesktop" xml:space="preserve">
+                <source>Space outside desktop</source>
+            </trans-unit>
+            <trans-unit id="properties.margin.selectBoxEditor.values.extra-small" xml:space="preserve">
+                <source>Above and below, very small</source>
+            </trans-unit>
+            <trans-unit id="properties.margin.selectBoxEditor.values.top-extra-small" xml:space="preserve">
+                <source>Above, very small</source>
+            </trans-unit>
+            <trans-unit id="properties.margin.selectBoxEditor.values.bottom-extra-small" xml:space="preserve">
+                <source>Below, very small</source>
+            </trans-unit>
+            <trans-unit id="properties.margin.selectBoxEditor.values.small" xml:space="preserve">
+                <source>Above and below, small</source>
+            </trans-unit>
+            <trans-unit id="properties.margin.selectBoxEditor.values.top-small" xml:space="preserve">
+                <source>Above, small</source>
+            </trans-unit>
+            <trans-unit id="properties.margin.selectBoxEditor.values.bottom-small" xml:space="preserve">
+                <source>Below, small</source>
+            </trans-unit>
+            <trans-unit id="properties.margin.selectBoxEditor.values.base" xml:space="preserve">
+                <source>Above and below, medium</source>
+            </trans-unit>
+            <trans-unit id="properties.margin.selectBoxEditor.values.top-base" xml:space="preserve">
+                <source>Above, medium</source>
+            </trans-unit>
+            <trans-unit id="properties.margin.selectBoxEditor.values.bottom-base" xml:space="preserve">
+                <source>Below, medium</source>
+            </trans-unit>
+            <trans-unit id="properties.margin.selectBoxEditor.values.large" xml:space="preserve">
+                <source>Above and below, big</source>
+            </trans-unit>
+            <trans-unit id="properties.margin.selectBoxEditor.values.top-large" xml:space="preserve">
+                <source>Above, big</source>
+            </trans-unit>
+            <trans-unit id="properties.margin.selectBoxEditor.values.bottom-large" xml:space="preserve">
+                <source>Below, big</source>
+            </trans-unit>
+            <trans-unit id="properties.margin.selectBoxEditor.values.extra-large" xml:space="preserve">
+                <source>Above and below, very big</source>
+            </trans-unit>
+            <trans-unit id="properties.margin.selectBoxEditor.values.top-extra-large" xml:space="preserve">
+                <source>Above, very big</source>
+            </trans-unit>
+            <trans-unit id="properties.margin.selectBoxEditor.values.bottom-extra-large" xml:space="preserve">
+                <source>Below, very big</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

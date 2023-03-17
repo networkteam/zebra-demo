@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Zebra.Site" source-language="de" datatype="plaintext">
+        <body>
+            <trans-unit id="properties.padding" xml:space="preserve">
+                <source>Innerer Abstand</source>
+            </trans-unit>
+            <trans-unit id="properties.padding.selectBoxEditor.values.extra-small" xml:space="preserve">
+                <source>Oben und unten, sehr klein</source>
+            </trans-unit>
+            <trans-unit id="properties.padding.selectBoxEditor.values.top-extra-small" xml:space="preserve">
+                <source>Oben, sehr klein</source>
+            </trans-unit>
+            <trans-unit id="properties.padding.selectBoxEditor.values.bottom-extra-small" xml:space="preserve">
+                <source>Unten, sehr klein</source>
+            </trans-unit>
+            <trans-unit id="properties.padding.selectBoxEditor.values.small" xml:space="preserve">
+                <source>Oben und unten, klein</source>
+            </trans-unit>
+            <trans-unit id="properties.padding.selectBoxEditor.values.top-small" xml:space="preserve">
+                <source>Oben, klein</source>
+            </trans-unit>
+            <trans-unit id="properties.padding.selectBoxEditor.values.bottom-small" xml:space="preserve">
+                <source>Unten, klein</source>
+            </trans-unit>
+            <trans-unit id="properties.padding.selectBoxEditor.values.base" xml:space="preserve">
+                <source>Oben und unten, mittel</source>
+            </trans-unit>
+            <trans-unit id="properties.padding.selectBoxEditor.values.top-base" xml:space="preserve">
+                <source>Oben, mittel</source>
+            </trans-unit>
+            <trans-unit id="properties.padding.selectBoxEditor.values.bottom-base" xml:space="preserve">
+                <source>Unten, mittel</source>
+            </trans-unit>
+            <trans-unit id="properties.padding.selectBoxEditor.values.large" xml:space="preserve">
+                <source>Oben und unten, groß</source>
+            </trans-unit>
+            <trans-unit id="properties.padding.selectBoxEditor.values.top-large" xml:space="preserve">
+                <source>Oben und unten, groß</source>
+            </trans-unit>
+            <trans-unit id="properties.padding.selectBoxEditor.values.bottom-large" xml:space="preserve">
+                <source>Unten, groß</source>
+            </trans-unit>
+            <trans-unit id="properties.padding.selectBoxEditor.values.extra-large" xml:space="preserve">
+                <source>Oben und unten, sehr groß</source>
+            </trans-unit>
+            <trans-unit id="properties.padding.selectBoxEditor.values.top-extra-large" xml:space="preserve">
+                <source>Oben, sehr groß</source>
+            </trans-unit>
+            <trans-unit id="properties.padding.selectBoxEditor.values.bottom-extra-large" xml:space="preserve">
+                <source>Unten, sehr groß</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

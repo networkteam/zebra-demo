@@ -1,0 +1,47 @@
+'Zebra.Site:Document.NotFound':
+  superTypes:
+    'Zebra.Site:Document.Page': true
+    'Neos.Neos:Timable': false
+  ui:
+    label: '404'
+    icon: 'icon-exclamation-circle'
+  constraints:
+    nodeTypes:
+      '*': false
+  properties:
+    metaAuthor: []
+    metaKeywords: []
+    metaDescription: []
+    metaImage: []
+    _hiddenInIndex:
+      defaultValue: true
+      ui:
+        inspector:
+          editorOptions:
+            disabled: true
+    metaRobotsNoindex:
+      defaultValue: true
+      ui:
+        inspector:
+          editorOptions:
+            disabled: true
+    metaRobotsNofollow:
+      defaultValue: true
+      ui:
+        inspector:
+          editorOptions:
+            disabled: true
+    title:
+      defaultValue: '404'
+      ui:
+        inspector:
+          editorOptions:
+            disabled: true
+    uriPathSegment:
+      defaultValue: '404'
+      ui:
+        inspector:
+          editorOptions:
+            disabled: true
+
+

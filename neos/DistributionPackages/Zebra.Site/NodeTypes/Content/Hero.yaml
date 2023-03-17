@@ -1,0 +1,45 @@
+'Zebra.Site:Content.Hero':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Hero
+    group: structure
+    icon: icon-stop
+  properties:
+    title:
+      type: string
+      ui:
+        label: Title
+        inline:
+          editorOptions:
+            placeholder: 'Enter title ...'
+      options:
+        preset: 'plainText'
+    subtitle:
+      type: string
+      ui:
+        label: Subtitle
+        inline:
+          editorOptions:
+            placeholder: 'Enter subtitle ...'
+      options:
+        preset: 'plainText'
+    description:
+      type: string
+      ui:
+        label: Description
+        inline:
+          editorOptions:
+            placeholder: 'Enter description ...'
+      options:
+        preset: 'plainText'
+    image:
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: general
+          editorOptions:
+            features:
+              crop: true

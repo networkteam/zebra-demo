@@ -1,0 +1,10 @@
+/**
+* Root fusion template
+* Also includes basic DocumentNodeTypes
+*/
+
+##################################
+# Includes
+##################################
+
+include: **/*.fusion

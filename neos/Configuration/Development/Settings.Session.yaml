@@ -1,0 +1,5 @@
+Neos:
+  Flow:
+    session:
+      # Do not expire sessions
+      inactivityTimeout: 0

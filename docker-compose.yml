@@ -1,0 +1,18 @@
+# Docker Compose setup for dependencies (database etc.) of the components.
+# A local PHP / Node.js installation is still required for development!
+#
+
+version: '3.9'
+services:
+  db:
+    image: 'postgres:13.5'
+    environment:
+      POSTGRES_USER: zebra
+      POSTGRES_PASSWORD: dev-db-secret
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - '54321:5432'
+
+volumes:
+  db_data:

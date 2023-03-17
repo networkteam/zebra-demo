@@ -1,0 +1,10 @@
+'Zebra.Site:Content.Stage':
+  superTypes:
+    'Neos.Neos:Content': true
+  childNodes:
+    content:
+      type: 'Neos.Neos:ContentCollection'
+  ui:
+    label: Stage
+    group: structure
+    icon: icon-stop

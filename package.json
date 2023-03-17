@@ -1,0 +1,19 @@
+{
+  "name": "zebra-demo",
+  "private": true,
+  "packageManager": "yarn@3.2.3",
+  "workspaces": [
+    "next",
+    "neos"
+  ],
+  "scripts": {
+    "dev": "concurrently -n neos,next \"yarn neos:dev\" \"yarn next:dev\"",
+    "setup": "concurrently -n neos \"yarn neos:setup\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0"
+  },
+  "dependencies": {
+    "framer-motion": "^10.3.4"
+  }
+}

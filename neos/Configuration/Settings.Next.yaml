@@ -1,0 +1,9 @@
+Networkteam:
+  Neos:
+    Next:
+      sites:
+        _default:
+          nextBaseUrl: '%env:NEXT_BASE_URL%'
+          revalidate:
+            uri: '/api/revalidate'
+            token: '%env:REVALIDATE_TOKEN%'

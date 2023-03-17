@@ -1,0 +1,26 @@
+'Zebra.Site:Document.Folder':
+  superTypes:
+    'Neos.Neos:Document': true
+  constraints:
+    nodeTypes:
+      'Zebra.Site:Document.Folder': false
+      'Zebra.Site:Document.RootPage': false
+  ui:
+    label: i18n
+    group: folders
+    icon: icon-folder-open-alt
+    help:
+      message: i18n
+  properties:
+    _hiddenInIndex:
+      defaultValue: true
+    metaRobotsNoindex:
+      defaultValue: true
+    hideSubpages:
+      type: boolean
+      ui:
+        label: i18n
+        help:
+          message: i18n
+        inspector:
+          group: document

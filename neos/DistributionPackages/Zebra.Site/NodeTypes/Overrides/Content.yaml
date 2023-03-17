@@ -1,0 +1,4 @@
+# Add Inspector UI
+'Neos.Neos:Content':
+  superTypes:
+    'Zebra.Site:Mixins.InspectorUi': true

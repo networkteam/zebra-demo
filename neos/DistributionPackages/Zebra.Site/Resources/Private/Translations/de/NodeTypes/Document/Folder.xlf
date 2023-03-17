@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Zebra.Site" source-language="de" datatype="plaintext">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve">
+                <source>Dokumenten-Ordner</source>
+            </trans-unit>
+            <trans-unit id="ui.help.message" xml:space="preserve">
+                <source>Ein Ordner für Dokumente, der nur im Backend sichtbar ist.</source>
+            </trans-unit>
+            <trans-unit id="properties.hideSubpages" xml:space="preserve">
+                <source>Unterseiten verstecken</source>
+            </trans-unit>
+            <trans-unit id="properties.hideSubpages.ui.help.message" xml:space="preserve">
+                <source>Unterseiten werden als nicht vorhanden betrachtet (404-Fehler)</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,11 @@
+Neos:
+  Flow:
+    persistence:
+      backendOptions:
+        dbname: '%env:DB_NAME%'
+        user: '%env:DB_USER%'
+        password: '%env:DB_PASSWORD%'
+        host: '%env:DB_HOST%'
+        port: '%env:DB_PORT%'
+        driver: 'pdo_pgsql'
+        charset: 'utf8'

@@ -1,0 +1,61 @@
+'Neos.NodeTypes:Headline':
+  superTypes:
+    'Zebra.Site:Mixins.ContentMargin': true
+  properties:
+    title:
+      options:
+        preset: 'headline'
+      ui:
+        inline:
+          editorOptions:
+            placeholder: 'Zebra.Site:NodeTypes.Content.Headline:properties.ui.inline.editorOptions.placeholder.enterHeadline'
+            formatting:
+              h1: false
+              h2: false
+              h3: false
+    hierarchy:
+      type: string
+      defaultValue: h1
+      ui:
+        reloadIfChanged: true
+        label: 'Zebra.Site:NodeTypes.Content.Headline:properties.hierarchy'
+        inspector:
+          group: layout
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              h1:
+                label: H1
+              h2:
+                label: H2
+              h3:
+                label: H3
+              h4:
+                label: H4
+              h5:
+                label: H5
+              h6:
+                label: H6
+    size:
+      type: string
+      ui:
+        reloadIfChanged: true
+        label: 'Zebra.Site:NodeTypes.Content.Headline:properties.size'
+        inspector:
+          group: layout
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            allowEmpty: true
+            values:
+              h1:
+                label: H1
+              h2:
+                label: H2
+              h3:
+                label: H3
+              h4:
+                label: H4
+              h5:
+                label: H5
+              h6:
+                label: H6

@@ -1,0 +1,21 @@
+{
+    "name": "zebra/site",
+    "type": "neos-site",
+    "description": "Zebra Demo – Site Package",
+    "require": {
+        "neos/neos": "*",
+        "neos/nodetypes": "*",
+        "neos/seo": "*",
+        "networkteam/neos-contentapi": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zebra\\Site\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Zebra.Site"
+        }
+    }
+}

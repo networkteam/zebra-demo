@@ -1,0 +1,17 @@
+Neos:
+  Neos:
+    userInterface:
+      translation:
+        autoInclude:
+          Zebra.Site:
+            - Main
+            - 'NodeTypes/*'
+    nodeTypes:
+      groups:
+        folders:
+          position: end
+          label: 'Zebra.Site:Main:nodeTypes.groups.folders'
+          collapsed: true
+    fusion:
+      autoInclude:
+        Zebra.Site: true

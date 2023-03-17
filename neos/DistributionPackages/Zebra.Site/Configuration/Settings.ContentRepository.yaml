@@ -1,0 +1,21 @@
+Neos:
+  ContentRepository:
+    contentDimensions:
+      language:
+        label: Language
+        icon: icon-globe
+        default: en
+        defaultPreset: en
+        presets:
+          en:
+            label: English
+            values: ['en']
+            uriSegment: ''
+          de:
+            label: Deutsch
+            values: ['de']
+            uriSegment: 'de'
+
+Lutzundgrub:
+  Site:
+    activeDimensions: ['en', 'de']

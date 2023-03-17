@@ -119,20 +119,19 @@
        <properties/>
       </variant>
       <node identifier="37cc4d8d-7bd8-4efd-8882-e2f2f93edb87" nodeName="node-3b5mnj57pt3cl">
-       <variant sortingIndex="100" workspace="live" nodeType="Zebra.Site:Content.Hero" version="9" removed="" hidden="" hiddenInIndex="">
+       <variant sortingIndex="100" workspace="live" nodeType="Zebra.Site:Content.Hero" version="10" removed="" hidden="" hiddenInIndex="">
         <dimensions>
          <language>en</language>
         </dimensions>
         <accessRoles __type="array"/>
         <creationDateTime __type="object" __classname="DateTime">2023-03-16T16:27:45+00:00</creationDateTime>
-        <lastModificationDateTime __type="object" __classname="DateTime">2023-03-17T11:11:02+00:00</lastModificationDateTime>
-        <lastPublicationDateTime __type="object" __classname="DateTime">2023-03-17T11:11:02+00:00</lastPublicationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2023-03-17T12:14:35+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2023-03-17T12:14:35+00:00</lastPublicationDateTime>
         <properties>
          <image __type="object" __identifier="ef9b6b1b-5244-4ae9-98c0-a742dc809e44" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;ef9b6b1b-5244-4ae9-98c0-a742dc809e44&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;zebra_1.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;e9f083c349e811b648d8423e1cd0a3fcc5294713&quot;,&quot;hash&quot;:&quot;e9f083c349e811b648d8423e1cd0a3fcc5294713&quot;,&quot;__identity&quot;:&quot;ff89bf4d-8f1a-42a4-ab38-33a47a1c7f89&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</image>
          <title __type="string">Why?</title>
          <subtitle __type="string">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</subtitle>
          <description __type="string">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</description>
-         <marginDesktop __type="string">small</marginDesktop>
         </properties>
        </variant>
        <node identifier="d28eb43d-7d76-8049-455e-df623634e769" nodeName="content">
@@ -176,20 +175,19 @@
        <properties/>
       </variant>
       <node identifier="d8819666-12be-44a3-8305-483c6e06ec57" nodeName="node-84v9wvapgleo8">
-       <variant sortingIndex="100" workspace="live" nodeType="Zebra.Site:Content.Hero" version="8" removed="" hidden="" hiddenInIndex="">
+       <variant sortingIndex="100" workspace="live" nodeType="Zebra.Site:Content.Hero" version="9" removed="" hidden="" hiddenInIndex="">
         <dimensions>
          <language>en</language>
         </dimensions>
         <accessRoles __type="array"/>
         <creationDateTime __type="object" __classname="DateTime">2023-03-16T18:20:11+00:00</creationDateTime>
-        <lastModificationDateTime __type="object" __classname="DateTime">2023-03-17T11:10:27+00:00</lastModificationDateTime>
-        <lastPublicationDateTime __type="object" __classname="DateTime">2023-03-17T11:10:27+00:00</lastPublicationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2023-03-17T12:17:46+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2023-03-17T12:17:46+00:00</lastPublicationDateTime>
         <properties>
          <image __type="object" __identifier="2f93baa1-5134-47f9-889f-0e7b70b68721" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;2f93baa1-5134-47f9-889f-0e7b70b68721&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;zebra_3.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;21af749fe699e936c4c402c2bd1874e4ad24c832&quot;,&quot;hash&quot;:&quot;21af749fe699e936c4c402c2bd1874e4ad24c832&quot;,&quot;__identity&quot;:&quot;045ed034-0bfe-4208-8fab-819c9375dadf&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</image>
          <title __type="string">What?</title>
          <subtitle __type="string">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
          <description __type="string">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</description>
-         <marginDesktop __type="string">small</marginDesktop>
         </properties>
        </variant>
       </node>
@@ -221,20 +219,19 @@
        <properties/>
       </variant>
       <node identifier="10a39709-b3bc-49f8-ad64-635e276397af" nodeName="node-hs2jf9qegjsr9">
-       <variant sortingIndex="100" workspace="live" nodeType="Zebra.Site:Content.Hero" version="12" removed="" hidden="" hiddenInIndex="">
+       <variant sortingIndex="100" workspace="live" nodeType="Zebra.Site:Content.Hero" version="13" removed="" hidden="" hiddenInIndex="">
         <dimensions>
          <language>en</language>
         </dimensions>
         <accessRoles __type="array"/>
         <creationDateTime __type="object" __classname="DateTime">2023-03-16T17:04:55+00:00</creationDateTime>
-        <lastModificationDateTime __type="object" __classname="DateTime">2023-03-17T11:11:04+00:00</lastModificationDateTime>
-        <lastPublicationDateTime __type="object" __classname="DateTime">2023-03-17T11:11:03+00:00</lastPublicationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2023-03-17T12:17:47+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2023-03-17T12:17:47+00:00</lastPublicationDateTime>
         <properties>
          <image __type="object" __identifier="92a4a214-7a06-4860-be9d-75cb46ecbba3" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;92a4a214-7a06-4860-be9d-75cb46ecbba3&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;zebra_2.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;1fb3dd4c079152924413ec4bb7029f875856eb22&quot;,&quot;hash&quot;:&quot;1fb3dd4c079152924413ec4bb7029f875856eb22&quot;,&quot;__identity&quot;:&quot;017aa5e5-d7f0-4c56-8594-420dbffc17e1&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</image>
          <title __type="string">How?</title>
          <subtitle __type="string">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</subtitle>
          <description __type="string">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.&lt;br&gt;Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</description>
-         <marginDesktop __type="string">small</marginDesktop>
         </properties>
        </variant>
       </node>
@@ -290,6 +287,22 @@
        <lastPublicationDateTime __type="object" __classname="DateTime">2023-03-13T09:49:44+00:00</lastPublicationDateTime>
        <properties/>
       </variant>
+      <node identifier="a80bc0f9-49dd-4189-9cc7-ef2669ed3706" nodeName="node-e9e5xx4uoarxg">
+       <variant sortingIndex="100" workspace="live" nodeType="Zebra.Site:Content.Hero" version="7" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2023-03-17T12:41:22+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2023-03-17T12:42:15+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2023-03-17T12:42:15+00:00</lastPublicationDateTime>
+        <properties>
+         <image __type="object" __identifier="7329a260-77e8-4d41-958f-d4bc636aa013" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;7329a260-77e8-4d41-958f-d4bc636aa013&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;zebra_4.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;7998a7bda58ce0150885a34fca6c700c750a5ad1&quot;,&quot;hash&quot;:&quot;7998a7bda58ce0150885a34fca6c700c750a5ad1&quot;,&quot;__identity&quot;:&quot;4e5c5bdc-23e3-4b41-b9da-9340b5f44597&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</image>
+         <title __type="string">404</title>
+         <subtitle __type="string">Page not found</subtitle>
+        </properties>
+       </variant>
+      </node>
      </node>
     </node>
    </node>

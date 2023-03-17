@@ -1,7 +1,6 @@
 'Zebra.Site:Content.Hero':
   superTypes:
     'Neos.Neos:Content': true
-    "Zebra.Site:Mixins.ContentMargin": true
   ui:
     label: Hero
     group: structure

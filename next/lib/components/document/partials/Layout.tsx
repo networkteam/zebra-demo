@@ -55,7 +55,7 @@ const Layout = ({ children }: LayoutProps) => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
-          <main className="relative z-10 min-h-screen bg-white pt-20 pb-12 transition-colors duration-500 dark:bg-dark">
+          <main className="relative z-10 min-h-screen bg-white pt-20 transition-colors duration-500 dark:bg-dark">
             {children}
           </main>
         </motion.div>

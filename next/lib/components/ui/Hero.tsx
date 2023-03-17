@@ -56,7 +56,7 @@ const Hero = ({ title, subtitle, description, image, typewriterEnabled, classNam
   return (
     <section
       className={classNames(
-        'container mx-auto flex min-h-[calc(100vh_-_10rem)] flex-col justify-between gap-8 px-4 py-8 md:flex-row lg:gap-12 lg:py-16',
+        'container mx-auto flex min-h-[calc(100vh_-_5rem)] flex-col justify-between gap-8 px-4 py-8 md:flex-row lg:gap-12 lg:py-16',
         className
       )}
     >

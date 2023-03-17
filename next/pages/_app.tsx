@@ -1,3 +1,4 @@
+import '../styles/global.css';
 import '../styles/tailwind.css';
 
 import { Bayon } from '@next/font/google';

@@ -16,6 +16,6 @@ Neos:
             values: ['de']
             uriSegment: 'de'
 
-Lutzundgrub:
+Zebra:
   Site:
     activeDimensions: ['en', 'de']

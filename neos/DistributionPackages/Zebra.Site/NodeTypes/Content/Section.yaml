@@ -11,8 +11,9 @@
     group: structure
     icon: icon-stop
   properties:
-    backgroundColor:
+    theme:
       type: string
+      defaultValue: light
       ui:
         label: i18n
         reloadIfChanged: true
@@ -20,9 +21,8 @@
           group: layout
           editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: true
             values:
               dark:
                 label: i18n
-              white:
+              light:
                 label: i18n

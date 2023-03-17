@@ -1,4 +1,4 @@
-import { ContentCollection, ContentComponent, Editable, useNode } from '@networkteam/zebra';
+import { ContentCollection, ContentComponent, useNode } from '@networkteam/zebra';
 
 import { baseClasses } from '@/lib/utils/baseClasses';
 
@@ -9,7 +9,7 @@ const ContentSection = () => {
 
   return (
     <ContentComponent>
-      <Section className={baseClasses(node)} backgroundColor={node.properties.backroundColor as string}>
+      <Section theme={node.properties.theme} className={baseClasses(node)}>
         <ContentCollection nodeName="content" />
       </Section>
     </ContentComponent>

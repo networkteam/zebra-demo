@@ -1,25 +1,28 @@
 import classNames from 'classnames';
 
+import { Theme, ThemeProvider } from '@/lib/utils/themeContext';
+
 type Props = {
-  backgroundColor?: string;
-  className?: string;
+  theme: Theme;
   children?: React.ReactNode;
+  className?: string;
 };
 
-const Section = ({ backgroundColor, className, children }: Props) => {
+const Section = ({ theme = 'light', className, children }: Props) => {
   return (
-    <section
-      className={classNames(
-        'relative z-10',
-        {
-          'bg-dark': backgroundColor === 'dark',
-          'bg-white': backgroundColor === 'white',
-        },
-        className
-      )}
-    >
-      <div className="container relative mx-auto px-4">{children}</div>
-    </section>
+    <ThemeProvider theme={theme}>
+      <section
+        className={classNames(
+          {
+            'bg-dark': theme === 'dark',
+            'bg-white': theme === 'light',
+          },
+          className
+        )}
+      >
+        <div className="container relative mx-auto px-4">{children}</div>
+      </section>
+    </ThemeProvider>
   );
 };
 

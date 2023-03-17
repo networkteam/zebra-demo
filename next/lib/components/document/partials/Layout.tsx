@@ -2,7 +2,7 @@ import { useMeta, useNode } from '@networkteam/zebra';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
-import { createContext, Ref, useEffect, useRef, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 
 import Header from './Header';
 

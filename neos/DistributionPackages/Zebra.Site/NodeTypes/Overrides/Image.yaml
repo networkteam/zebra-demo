@@ -1,0 +1,16 @@
+'Neos.NodeTypes:Image':
+  superTypes:
+    'Zebra.Site:Mixins.ContentMargin': true
+  properties:
+    alternativeText:
+      validation:
+        'Neos.Neos/Validation/NotEmptyValidator': []
+    fullwidth:
+      type: boolean
+      ui:
+        label: i18n
+        inspector:
+          group: image
+    # integrate when necessary
+    hasCaption: [ ]
+    caption: [ ]

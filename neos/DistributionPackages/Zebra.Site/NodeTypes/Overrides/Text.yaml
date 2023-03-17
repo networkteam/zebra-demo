@@ -1,0 +1,3 @@
+'Neos.NodeTypes:Text':
+  superTypes:
+    'Zebra.Site:Mixins.ContentMargin': true

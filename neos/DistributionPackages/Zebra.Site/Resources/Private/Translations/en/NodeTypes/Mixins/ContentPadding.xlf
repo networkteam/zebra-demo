@@ -2,8 +2,8 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
     <file original="" product-name="Zebra.Site" source-language="en" datatype="plaintext">
         <body>
-            <trans-unit id="properties.paddingMobile" xml:space="preserve">
-                <source>Space inside mobile</source>
+            <trans-unit id="properties.padding" xml:space="preserve">
+                <source>Space inside</source>
             </trans-unit>
             <trans-unit id="properties.paddingDesktop" xml:space="preserve">
                 <source>Space inside desktop</source>

@@ -4,10 +4,10 @@
     marginMobile:
       type: string
       ui:
-        label: i18n
+        label: Zebra.Site:NodeTypes.Mixins.ContentMargin:properties.margin
         reloadIfChanged: true
         inspector:
-          group: general
+          group: mediaXs
           editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions: &marginEditorOptions
             allowEmpty: true
@@ -45,9 +45,9 @@
     marginDesktop:
       type: string
       ui:
-        label: i18n
+        label: Zebra.Site:NodeTypes.Mixins.ContentMargin:properties.margin
         reloadIfChanged: true
         inspector:
-          group: general
+          group: mediaLg
           editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions: *marginEditorOptions

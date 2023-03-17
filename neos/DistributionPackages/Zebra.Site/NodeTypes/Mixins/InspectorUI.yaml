@@ -2,6 +2,11 @@
   abstract: true
   ui:
     inspector:
+      tabs:
+        settingsResponsivity:
+          label: 'Zebra.Site:Main:tabs.settingsResponsivity'
+          icon: icon-arrows-h
+          position: 'after default'
       groups:
         general:
           label: 'Zebra.Site:Main:groups.general'
@@ -12,6 +17,30 @@
         layout:
           label: 'Neos.NodeTypes:NodeTypes.Page:groups.layout'
           icon: icon-paint-brush
+        mediaXs:
+          label: 'Zebra.Site:Main:groups.mediaXs'
+          icon: icon-mobile
+          tab: settingsResponsivity
+        mediaSm:
+          label: 'Zebra.Site:Main:groups.mediaSm'
+          icon: icon-tablet
+          tab: settingsResponsivity
+        mediaMd:
+          label: 'Zebra.Site:Main:groups.mediaMd'
+          icon: icon-laptop
+          tab: settingsResponsivity
+        mediaLg:
+          label: 'Zebra.Site:Main:groups.mediaLg'
+          icon: icon-desktop
+          tab: settingsResponsivity
+        mediaXl:
+          label: 'Zebra.Site:Main:groups.mediaXl'
+          icon: icon-tv
+          tab: settingsResponsivity
+        mediaXxl:
+          label: 'Zebra.Site:Main:groups.mediaXxl'
+          icon: icon-projector
+          tab: settingsResponsivity
         behaviour:
           label: 'Zebra.Site:Main:groups.behaviour'
           icon: icon-arrows

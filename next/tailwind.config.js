@@ -19,6 +19,10 @@ module.exports = {
       pattern: /(mb|mt|my|pb|pt|py)-(12|20|24|28|36)/,
       variants: ['sm'],
     },
+    {
+      pattern: /col-span-(3|4|6|8|9|12)/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+    },
   ],
   plugins: [],
 };

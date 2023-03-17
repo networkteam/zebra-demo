@@ -1,0 +1,98 @@
+'Zebra.Site:Content.MultiColumn':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Zebra.Site:Mixins.ContentMargin': true
+  ui:
+    label: i18n
+    icon: icon-border-all
+  childNodes:
+    content:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': false
+          'Zebra.Site:Content.MultiColumn.Column': true
+
+'Zebra.Site:Content.MultiColumn.Column':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Zebra.Site:Mixins.ContentMargin': true
+    'Zebra.Site:Mixins.InspectorUi': true
+  ui:
+    label: i18n
+    icon: icon-caret-square-down
+  childNodes:
+    content:
+      type: 'Neos.Neos:ContentCollection'
+  properties:
+    layoutXs:
+      type: integer
+      defaultValue: 12
+      ui:
+        label: 'Zebra.Site:NodeTypes.Content.MultiColumn.Column:properties.layout'
+        reloadIfChanged: true
+        inspector:
+          group: mediaXs
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions: &columnEditorOptions
+            allowEmpty: true
+            values:
+              3:
+                label: '25%'
+              4:
+                label: '33%'
+              6:
+                label: '50%'
+              8:
+                label: '66%'
+              9:
+                label: '75%'
+              12:
+                label: '100%'
+    layoutSm:
+      type: integer
+      defaultValue: 6
+      ui:
+        label: 'Zebra.Site:NodeTypes.Content.MultiColumn.Column:properties.layout'
+        reloadIfChanged: true
+        inspector:
+          group: mediaSm
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions: *columnEditorOptions
+    layoutMd:
+      type: integer
+      ui:
+        label: 'Zebra.Site:NodeTypes.Content.MultiColumn.Column:properties.layout'
+        reloadIfChanged: true
+        inspector:
+          group: mediaMd
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions: *columnEditorOptions
+    layoutLg:
+      type: integer
+      defaultValue: 4
+      ui:
+        label: 'Zebra.Site:NodeTypes.Content.MultiColumn.Column:properties.layout'
+        reloadIfChanged: true
+        inspector:
+          group: mediaLg
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions: *columnEditorOptions
+    layoutXl:
+      type: integer
+      ui:
+        label: 'Zebra.Site:NodeTypes.Content.MultiColumn.Column:properties.layout'
+        reloadIfChanged: true
+        inspector:
+          group: mediaXl
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions: *columnEditorOptions
+    layoutXxl:
+      type: integer
+      ui:
+        label: 'Zebra.Site:NodeTypes.Content.MultiColumn.Column:properties.layout'
+        reloadIfChanged: true
+        inspector:
+          group: mediaXxl
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions: *columnEditorOptions

@@ -2,6 +2,9 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
     <file original="" product-name="Zebra.Site" source-language="de" datatype="plaintext">
         <body>
+            <trans-unit id="tabs.settingsResponsivity" xml:space="preserve">
+                <source>Einstellungen für Responsivität</source>
+            </trans-unit>
             <trans-unit id="groups.general" xml:space="preserve">
                 <source>Allgemein</source>
             </trans-unit>
@@ -22,6 +25,24 @@
             </trans-unit>
             <trans-unit id="groups.background" xml:space="preserve">
                 <source>Hintergrund</source>
+            </trans-unit>
+            <trans-unit id="groups.mediaXs" xml:space="preserve">
+                <source>Mobile</source>
+            </trans-unit>
+            <trans-unit id="groups.mediaSm" xml:space="preserve">
+                <source>Phablet</source>
+            </trans-unit>
+            <trans-unit id="groups.mediaMd" xml:space="preserve">
+                <source>Tablet</source>
+            </trans-unit>
+            <trans-unit id="groups.mediaLg" xml:space="preserve">
+                <source>Desktop</source>
+            </trans-unit>
+            <trans-unit id="groups.mediaXl" xml:space="preserve">
+                <source>XL Desktop</source>
+            </trans-unit>
+            <trans-unit id="groups.mediaXxl" xml:space="preserve">
+                <source>XXL Desktop</source>
             </trans-unit>
             <trans-unit id="nodeTypes.groups.folders" xml:space="preserve">
                 <source>Ordner</source>

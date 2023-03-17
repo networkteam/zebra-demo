@@ -1,6 +1,7 @@
 import ContentHeadline from '../components/content/Headline';
 import ContentHero from '../components/content/Hero';
 import ContentImage from '../components/content/Image';
+import ContentMulticolumn from '../components/content/MultiColumn';
 import ContentSection from '../components/content/Section';
 import ContentStage from '../components/content/Stage';
 import ContentText from '../components/content/Text';
@@ -23,4 +24,6 @@ export const nodeTypes = {
   'Zebra.Site:Content.Stage': ContentStage,
   'Zebra.Site:Content.Hero': ContentHero,
   'Zebra.Site:Content.Section': ContentSection,
+  'Zebra.Site:Content.MultiColumn': ContentMulticolumn,
+  'Zebra.Site:Content.MultiColumn.Column': ContentMulticolumn.Column,
 };

@@ -7,7 +7,7 @@ type StageProps = {
 const Stage = ({ children }: StageProps) => {
   return (
     <section className="container mx-auto flex min-h-[calc(100vh_-_8rem)] flex-col px-4">
-      <div className="flex grow flex-col justify-center">
+      <div className="my-16 flex grow flex-col justify-center">
         <LogoTarget />
       </div>
       <div className="max-w-2xl border-t-2 border-dark dark:border-white">{children}</div>

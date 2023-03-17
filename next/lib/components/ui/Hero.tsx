@@ -18,7 +18,7 @@ const Hero = ({ title, subtitle, description, image }: HeroProps) => {
   const landscape = image && image.width > image.height;
 
   return (
-    <section className="container mx-auto flex min-h-[calc(100vh_-_8rem)] flex-col gap-8 px-4 md:flex-row md:py-12 lg:gap-12 xl:py-12">
+    <section className="container mx-auto flex flex-col gap-8 px-4 md:flex-row md:py-12 lg:gap-12 xl:py-12">
       <div
         className={classNames('justify-self-end text-dark dark:text-white lg:mb-0', {
           'lg:mt-24 xl:mt-48 2xl:mt-64': landscape,

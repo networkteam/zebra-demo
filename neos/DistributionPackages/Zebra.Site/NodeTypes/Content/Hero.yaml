@@ -5,7 +5,7 @@
   ui:
     label: Hero
     group: structure
-    icon: icon-stop
+    icon: mask
   properties:
     title:
       type: string
@@ -40,7 +40,7 @@
         label: i18n
         reloadIfChanged: true
         inspector:
-          group: general
+          group: layout
           editorOptions:
             features:
               crop: true

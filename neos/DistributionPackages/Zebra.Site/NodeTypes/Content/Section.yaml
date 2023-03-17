@@ -9,7 +9,7 @@
   ui:
     label: i18n
     group: structure
-    icon: icon-stop
+    icon: square
   properties:
     theme:
       type: string
@@ -22,7 +22,7 @@
           editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             values:
-              dark:
-                label: i18n
               light:
+                label: i18n
+              dark:
                 label: i18n

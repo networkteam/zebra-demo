@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Zebra.Site" source-language="de" datatype="plaintext">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve">
+                <source>Section</source>
+            </trans-unit>
+            <trans-unit id="properties.theme" xml:space="preserve">
+                <source>Theme</source>
+            </trans-unit>
+            <trans-unit id="properties.theme.selectBoxEditor.values.light" xml:space="preserve">
+                <source>Hell</source>
+            </trans-unit>
+            <trans-unit id="properties.theme.selectBoxEditor.values.dark" xml:space="preserve">
+                <source>Dunkel</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

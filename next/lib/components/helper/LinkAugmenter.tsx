@@ -1,6 +1,8 @@
 import { useInBackend } from '@networkteam/zebra';
 import Link from 'next/link';
 
+import { isExternalUri } from '@/lib/utils/externalUri';
+
 type LinkAugmenterProps = {
   href?: string;
   openInNewWindow?: boolean;
@@ -26,12 +28,14 @@ export default function LinkAugmenter({
     return <>{children}</>;
   }
 
+  const isExternal = isExternalUri(href);
+
   return (
     <Link
       href={href}
       className={className}
-      target={openInNewWindow ? '_blank' : undefined}
-      rel={openInNewWindow ? 'noreferrer' : undefined}
+      target={openInNewWindow || isExternal ? '_blank' : undefined}
+      rel={openInNewWindow || isExternal ? 'noreferrer' : undefined}
     >
       {children}
     </Link>

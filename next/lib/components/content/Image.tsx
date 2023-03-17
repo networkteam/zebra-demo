@@ -1,20 +1,21 @@
-import { ContentCollection, ContentComponent, Editable, useNode } from '@networkteam/zebra';
-import Image from '../ui/Image';
+import { ContentComponent, useNode } from '@networkteam/zebra';
+
 import { baseClasses } from '@/lib/utils/baseClasses';
+
+import ImageComponent from '../ui/Image';
 
 const ContentImage = () => {
   const node = useNode();
 
   return (
     <ContentComponent>
-      <Image
-        altText={node.properties.alternativeText}
-        fullwidth={node.properties.fullwidth}
+      <ImageComponent
         image={node.properties.image}
+        altText={node.properties.alternativeText}
         title={node.properties.title}
+        fullwidth={node.properties.fullwidth}
         link={node.properties.link}
-        baseClasses={baseClasses(node)}
-
+        className={baseClasses(node)}
       />
     </ContentComponent>
   );

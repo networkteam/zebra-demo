@@ -1,35 +1,47 @@
 import classNames from 'classnames';
 import Image from 'next/image';
-import ConditionalWrapper from '../helper/ConditionalWrapper';
+
 import DummyImage from '../helper/DummyImage';
+import LinkAugmenter from '../helper/LinkAugmenter';
 
 type Props = {
+  image: {
+    src: string;
+    width: number;
+    height: number;
+    title: string;
+    caption: string;
+    copyrightNotice: string;
+  };
   altText: string;
   fullwidth: boolean;
-  image: any;
   title: string;
-  link: string; // TODO: implement link
-  baseClasses: string;
+  link: string;
+  className: string;
 };
 
-const ImageComponent = ({ altText, fullwidth, image, title, link, baseClasses }: Props) => {
+const ImageComponent = ({ image, altText, fullwidth, title, link, className }: Props) => {
   return (
     <>
       {image && image.src ? (
-        <ConditionalWrapper condition={!!link} classNames='block' tagName='a' attributes={{href: link, target: "_blank"}}>
+        <LinkAugmenter href={link} className="block">
           <Image
-            className={classNames('max-full h-auto', baseClasses, {
-              'w-full': fullwidth,
-            })}
-            alt={altText}
+            className={classNames(
+              'h-auto max-w-full',
+              {
+                'w-full': fullwidth,
+              },
+              className
+            )}
+            alt={altText || image?.title || ''}
             src={image.src}
             width={image.width}
             height={image.height}
             title={title}
           />
-        </ConditionalWrapper>
+        </LinkAugmenter>
       ) : (
-        <DummyImage  height='200px'/>
+        <DummyImage />
       )}
     </>
   );

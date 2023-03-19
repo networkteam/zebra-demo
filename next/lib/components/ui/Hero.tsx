@@ -40,7 +40,9 @@ const Hero = ({ title, subtitle, description, image, typewriterEnabled, classNam
   useEffect(() => {
     if (!typewriterEnabled || typeof title !== 'string') return;
 
-    const reverse = () => {
+    const reverse = (routePath: string) => {
+      if (routePath === router.asPath) return;
+
       reverseTyping(title);
     };
 

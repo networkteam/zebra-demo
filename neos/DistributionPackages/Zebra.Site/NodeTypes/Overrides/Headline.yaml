@@ -3,6 +3,7 @@
     'Zebra.Site:Mixins.ContentMargin': true
   properties:
     title:
+      defaultValue: ''
       options:
         preset: 'headline'
       ui:

@@ -8,24 +8,6 @@
             <trans-unit id="groups.general" xml:space="preserve">
                 <source>Allgemein</source>
             </trans-unit>
-            <trans-unit id="groups.behaviour" xml:space="preserve">
-                <source>Verhalten</source>
-            </trans-unit>
-            <trans-unit id="groups.address" xml:space="preserve">
-                <source>Adresse</source>
-            </trans-unit>
-            <trans-unit id="groups.tracking" xml:space="preserve">
-                <source>Tracking</source>
-            </trans-unit>
-            <trans-unit id="groups.animation" xml:space="preserve">
-                <source>Animation</source>
-            </trans-unit>
-            <trans-unit id="groups.menu" xml:space="preserve">
-                <source>Navigation</source>
-            </trans-unit>
-            <trans-unit id="groups.background" xml:space="preserve">
-                <source>Hintergrund</source>
-            </trans-unit>
             <trans-unit id="groups.mediaXs" xml:space="preserve">
                 <source>Mobile</source>
             </trans-unit>

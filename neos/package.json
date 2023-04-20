@@ -6,10 +6,11 @@
   ],
   "scripts": {
     "dev": "concurrently -n db,server \"docker-compose up db\" \"yarn server\"",
-    "setup": "composer install && ./flow doctrine:migrate && ./flow site:import --package-key Zebra.Site",
+    "setup": "./flow doctrine:migrate && ./flow site:import --package-key Zebra.Site",
     "server": "PHP_CLI_SERVER_WORKERS=4 ./flow server:run",
     "neos:dev": "yarn dev",
-    "neos:setup": "yarn setup"
+    "neos:setup": "yarn setup",
+    "neos:install": "composer install"
   },
   "devDependencies": {
     "concurrently": "^7.3.0"

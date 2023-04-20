@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "dev": "concurrently -n neos,next \"yarn neos:dev\" \"yarn next:dev\"",
-    "setup": "concurrently -n neos \"yarn neos:setup\""
+    "setup": "concurrently -n neos \"yarn neos:setup\"",
+    "postinstall": "concurrently -n neos \"yarn neos:install\""
   },
   "devDependencies": {
     "concurrently": "^7.3.0"

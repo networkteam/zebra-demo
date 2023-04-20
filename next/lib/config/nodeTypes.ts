@@ -2,6 +2,7 @@ import ContentHeadline from '../components/content/Headline';
 import ContentHero from '../components/content/Hero';
 import ContentImage from '../components/content/Image';
 import ContentMulticolumn from '../components/content/MultiColumn';
+import ContentReferences from '../components/content/References';
 import ContentSection from '../components/content/Section';
 import ContentStage from '../components/content/Stage';
 import ContentText from '../components/content/Text';
@@ -21,6 +22,8 @@ export const nodeTypes = {
   'Neos.NodeTypes:Headline': ContentHeadline,
   'Neos.NodeTypes:Text': ContentText,
   'Neos.NodeTypes:Image': ContentImage,
+  'Neos.NodeTypes.ContentReferences:ContentReferences': ContentReferences,
+
   'Zebra.Site:Content.Stage': ContentStage,
   'Zebra.Site:Content.Hero': ContentHero,
   'Zebra.Site:Content.Section': ContentSection,

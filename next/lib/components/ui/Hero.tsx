@@ -68,9 +68,7 @@ const Hero = ({ title, subtitle, description, image, typewriterEnabled, classNam
           'lg:mt-24 xl:mt-48': !landscape,
         })}
       >
-        <h1 className="h-[12.5rem] truncate font-bayon text-[10rem] leading-tight">
-          {typewriterEnabled ? currentText : title}
-        </h1>
+        <h1 className="h-[12.5rem] font-bayon text-[10rem] leading-tight">{typewriterEnabled ? currentText : title}</h1>
         {subtitle && <div className="mb-4 font-bayon text-2xl lg:w-2/3">{subtitle}</div>}
         {description && (
           <div

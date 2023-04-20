@@ -5,37 +5,6 @@ prototype(Zebra.Site:Document.Page.Api) < prototype(Networkteam.Neos.ContentApi:
     mainNavigation = Networkteam.Neos.ContentApi:MenuItems {
       maximumLevels = 1
     }
-
-    // dimensionNavigation = Networkteam.Neos.ContentApi:DimensionItems
-
-    // footer = Networkteam.Neos.ContentApi:RecursiveNode {
-    //   @context {
-    //     node = ${q(site).children('footer').get(0)}
-    //     _childNodes = ${q(q(site).children('footer').get(0)).children('[!instanceof Neos.Neos:Document]').get() || []}
-    //   }
-    // }
-
-    // seo = Neos.Fusion:DataStructure {
-    //   url = Neos.Neos:NodeUri {
-    //     node = ${documentNode}
-    //     absolute = true
-    //   }
-    //   metaAuthor = ${q(documentNode).property('metaAuthor')}
-    //   metaKeywords = ${q(documentNode).property('metaKeywords')}
-    //   metaRobotsNoindex = ${q(documentNode).property('metaRobotsNoindex')}
-    //   metaRobotsNofollow = ${q(documentNode).property('metaRobotsNofollow')}
-    //   metaDescription = ${q(documentNode).property('metaDescription')}
-    //   metaImage = Neos.Fusion:DataStructure {
-    //     @context.asset = ${q(documentNode).property('metaImage')}
-    //     src = Neos.Neos:ImageUri {
-    //       asset = ${asset}
-    //       width = 1200
-    //       height = 630
-    //       absolute = true
-    //     }
-    //     type = ${asset.mediaType}
-    //   }
-    // }
   }
   site = Networkteam.Neos.ContentApi:BaseNode {
     @context.node = ${site}
@@ -48,18 +17,6 @@ prototype(Zebra.Site:Document.Page.Api) < prototype(Networkteam.Neos.ContentApi:
 prototype(Zebra.Site:Document.RootPage.Api) < prototype(Zebra.Site:Document.Page.Api)
 prototype(Zebra.Site:Document.Folder.Api) < prototype(Zebra.Site:Document.Page.Api)
 prototype(Zebra.Site:Document.NotFound.Api) < prototype(Zebra.Site:Document.Page.Api)
-
-// prototype(Zebra.Site:Helper.MetaNavigation) < prototype(Neos.Fusion:Map) {
-//   items = ${q(site).property('metaNavigation')}
-//   itemRenderer = Neos.Fusion:DataStructure {
-//     identifier = ${item.identifier}
-//     label = ${q(item).property('title')}
-//     uri = Neos.Neos:NodeUri {
-//       node = ${item}
-//     }
-//     state = ${documentNode == item ? 'active' : ''}
-//   }
-// }
 
 prototype(Neos.Neos:Shortcut.Api) < prototype(Zebra.Site:Document.Page.Api) {
   @context.additionalDocumentProperties = Neos.Fusion:DataStructure {
@@ -98,45 +55,15 @@ prototype(Neos.Neos:Shortcut.Api) < prototype(Zebra.Site:Document.Page.Api) {
   node.properties.@process.additionalDocumentProperties = ${Array.concat(value, additionalDocumentProperties)}
 }
 
-
-// // TODO: think about a better way to do extend properties of content elements
-// prototype(Networkteam.Neos.ContentApi:BaseNode) {
-//   __type = 'node'
-
-//   @context.additionalNodeProperties = Neos.Fusion:Case {
-//     button {
-//       condition = ${q(node).is('[instanceof Zebra.Site:Content.Button]')}
-//       renderer = Neos.Fusion:DataStructure {
-//         @context.sectionNode = ${q(node).property('sectionLink')}
-
-//         sectionTitle = ${q(sectionNode).property('sectionTitle')}
-//         sectionTitle.@if.hasSectionNode = ${sectionNode}
-
-//         sectionUri = Neos.Neos:NodeUri {
-//           sectionNode = ${sectionNode}
-//           node = ${q(sectionNode).closest('[instanceof Zebra.Site:Document.Page]').get(0)}
-//         }
-//         sectionUri.@if.hasSectionNode = ${sectionNode}
-//       }
-//     }
-//     default {
-//       condition = true
-//       renderer = ${[]}
-//     }
-//   }
-
-//   properties.@process.additionalNodeProperties = ${Array.concat(value, additionalNodeProperties)}
-// }
-
-// prototype(Networkteam.Neos.ContentApi:RecursiveNode) {
-//   @context._childNodes = Neos.Fusion:Case {
-//     contentReferences {
-//       condition = ${q(node).is('[instanceof Neos.NodeTypes.ContentReferences:ContentReferences]')}
-//       renderer = ${q(node).property('references')}
-//     }
-//     default {
-//       condition = true
-//       renderer = ${q(node).children('[!instanceof Neos.Neos:Document]').get()}
-//     }
-//   }
-// }
+prototype(Networkteam.Neos.ContentApi:RecursiveNode) {
+  @context._childNodes = Neos.Fusion:Case {
+    contentReferences {
+      condition = ${q(node).is('[instanceof Neos.NodeTypes.ContentReferences:ContentReferences]')}
+      renderer = ${q(node).property('references')}
+    }
+    default {
+      condition = true
+      renderer = ${q(node).children('[!instanceof Neos.Neos:Document]').get()}
+    }
+  }
+}

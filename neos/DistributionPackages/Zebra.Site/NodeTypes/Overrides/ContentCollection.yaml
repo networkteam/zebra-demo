@@ -1,17 +1,19 @@
 # Setup global constraints for all content collections
 # If you want to use a NodeType of these set an explicit allow in your desired NodeType
-# Leave this part at the bottom!
+
 'Neos.Neos:ContentCollection':
   constraints:
     nodeTypes:
-      # 'Zebra.Site:Content.Section': false
-      # 'Zebra.Site:Content.MultiColumn.Column': false
-      # 'Zebra.Site:Content.LogoGrid.Item': false
-      # 'Neos.NodeTypes:AssetList': false
-      # 'Neos.NodeTypes:TextWithImage': false
-      # 'Neos.NodeTypes.ColumnLayouts:TwoColumn': false
-      # 'Neos.NodeTypes.ColumnLayouts:ThreeColumn': false
-      # 'Neos.NodeTypes.ColumnLayouts:FourColumn': false
-      # 'Neos.NodeTypes.AssetList:AssetList': false
-      # 'Neos.NodeTypes.Form:Form': false
-      # 'Neos.NodeTypes.Navigation:Navigation': false
+      'Zebra.Site:Content.Section': false
+      'Zebra.Site:Content.MultiColumn.Column': false
+      'Zebra.Site:Content.LogoGrid.Item': false
+      'Neos.NodeTypes:AssetList': false
+      'Neos.NodeTypes:TextWithImage': false
+      'Neos.NodeTypes.ColumnLayouts:TwoColumn': false
+      'Neos.NodeTypes.ColumnLayouts:ThreeColumn': false
+      'Neos.NodeTypes.ColumnLayouts:FourColumn': false
+      'Neos.NodeTypes.AssetList:AssetList': false
+      'Neos.NodeTypes.Form:Form': false
+      'Neos.NodeTypes.Navigation:Navigation': false
+      'Neos.NodeTypes.Html:Html': false
+      'Neos.Neos:PluginView': false

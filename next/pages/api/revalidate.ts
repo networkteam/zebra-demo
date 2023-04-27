@@ -1,3 +1,4 @@
-import { NeosRevalidateAll } from '@networkteam/zebra';
+import { NeosRevalidate } from '@networkteam/zebra';
 
-export default NeosRevalidateAll;
+// Use NeosRevalidate to simulate issues with naive invalidation
+export default NeosRevalidate;

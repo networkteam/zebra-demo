@@ -5,5 +5,5 @@ Networkteam:
         _default:
           nextBaseUrl: '%env:NEXT_BASE_URL%'
           revalidate:
-            uri: '/api/revalidate'
+            uri: '%env:REVALIDATE_URL%'
             token: '%env:REVALIDATE_TOKEN%'

@@ -14,5 +14,17 @@ services:
     ports:
       - '54321:5432'
 
+  grazer:
+    image: 'ghcr.io/networkteam/grazer:latest'
+    environment:
+      GZ_REVALIDATE_TOKEN: a-secret-token
+      GZ_NEXT_REVALIDATE_URL: http://host.docker.internal:3000/api/revalidate
+      GZ_NEOS_BASE_URL: http://host.docker.internal:8081/
+      GZ_VERBOSE: true
+    ports:
+      - '3100:3100'
+    extra_hosts:
+        - "host.docker.internal:host-gateway"
+
 volumes:
   db_data:

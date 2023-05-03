@@ -27,7 +27,7 @@
         "neos/redirecthandler-databasestorage": "~5.0",
         "neos/redirecthandler-ui": "~2.4",
 
-        "networkteam/neos-contentapi": "^0.5.0",
+        "networkteam/neos-contentapi": "^0.7.0",
         "networkteam/neos-next": "^0.2.0",
         "zebra/site": "@dev"
     },

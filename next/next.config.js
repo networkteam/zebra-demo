@@ -9,7 +9,7 @@ const nextConfig = {
   //   defaultLocale: 'de',
   // },
   images: {
-    domains: ['localhost'],
+    domains: ['localhost', '127.0.0.1'],
   },
 };
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f72cff6c59dbaa9cfc0e18caafecc1a",
+    "content-hash": "ff5767c0b0c331b18dd6b5288c425bc4",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -6462,19 +6462,20 @@
         },
         {
             "name": "networkteam/neos-contentapi",
-            "version": "v0.7.0",
+            "version": "v0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/networkteam/Networkteam.Neos.ContentApi.git",
-                "reference": "9dbb20a88879aa23ae41b9ad17beea9026fcc5d2"
+                "reference": "1a38f68aec1353ac601252c02ab1ebba51277dfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networkteam/Networkteam.Neos.ContentApi/zipball/9dbb20a88879aa23ae41b9ad17beea9026fcc5d2",
-                "reference": "9dbb20a88879aa23ae41b9ad17beea9026fcc5d2",
+                "url": "https://api.github.com/repos/networkteam/Networkteam.Neos.ContentApi/zipball/1a38f68aec1353ac601252c02ab1ebba51277dfe",
+                "reference": "1a38f68aec1353ac601252c02ab1ebba51277dfe",
                 "shasum": ""
             },
             "require": {
+                "ext-dom": "*",
                 "neos/neos": "^7.3 || ^8.0",
                 "networkteam/neos-util": "^8.0"
             },
@@ -6496,22 +6497,22 @@
             "description": "Content API for Neos",
             "support": {
                 "issues": "https://github.com/networkteam/Networkteam.Neos.ContentApi/issues",
-                "source": "https://github.com/networkteam/Networkteam.Neos.ContentApi/tree/v0.7.0"
+                "source": "https://github.com/networkteam/Networkteam.Neos.ContentApi/tree/v0.8.0"
             },
-            "time": "2023-05-03T14:09:35+00:00"
+            "time": "2023-06-08T07:05:09+00:00"
         },
         {
             "name": "networkteam/neos-next",
-            "version": "v0.2.1",
+            "version": "v0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/networkteam/Networkteam.Neos.Next.git",
-                "reference": "d57734b73b119b6f460cd018c1abb8578c8edfab"
+                "reference": "a6b45b95eeb875b39e6830076cc89c1dfc320ba5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networkteam/Networkteam.Neos.Next/zipball/d57734b73b119b6f460cd018c1abb8578c8edfab",
-                "reference": "d57734b73b119b6f460cd018c1abb8578c8edfab",
+                "url": "https://api.github.com/repos/networkteam/Networkteam.Neos.Next/zipball/a6b45b95eeb875b39e6830076cc89c1dfc320ba5",
+                "reference": "a6b45b95eeb875b39e6830076cc89c1dfc320ba5",
                 "shasum": ""
             },
             "require": {
@@ -6536,9 +6537,9 @@
             "description": "Adds Next.js support to Neos CMS",
             "support": {
                 "issues": "https://github.com/networkteam/Networkteam.Neos.Next/issues",
-                "source": "https://github.com/networkteam/Networkteam.Neos.Next/tree/v0.2.1"
+                "source": "https://github.com/networkteam/Networkteam.Neos.Next/tree/v0.4.0"
             },
-            "time": "2023-02-09T11:54:50+00:00"
+            "time": "2023-06-08T07:08:15+00:00"
         },
         {
             "name": "networkteam/neos-util",

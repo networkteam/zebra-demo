@@ -24,6 +24,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.20.13":
+  version: 7.22.3
+  resolution: "@babel/runtime@npm:7.22.3"
+  dependencies:
+    regenerator-runtime: ^0.13.11
+  checksum: 8fc50785ca4cba749fed90bffca7e6fd52d4709755654e95b8d2a945fc034b56fb8c2e8a0183fea7c4abb86bf5fa77678c0ea35163b6920649833d180c34c234
+  languageName: node
+  linkType: hard
+
 "@emotion/is-prop-valid@npm:^0.8.2":
   version: 0.8.8
   resolution: "@emotion/is-prop-valid@npm:0.8.8"
@@ -114,15 +123,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@networkteam/zebra@npm:^0.8.0":
-  version: 0.8.0
-  resolution: "@networkteam/zebra@npm:0.8.0"
+"@networkteam/zebra@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "@networkteam/zebra@npm:0.9.0"
   dependencies:
+    "@babel/runtime": ^7.20.13
     "@supercharge/promise-pool": ^2.3.2
+    loglevel: ^1.8.0
   peerDependencies:
+    next: ^12.2.0 || ^13.0.0
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: b00243bbed4048262400252a386e086da82960fc2c5397bd15d0ad974ada3d5c68d1e3005bad4f764a9d02eda668fa207bc8c4418b953f2d21d6e5a425f2ca5a
+  checksum: 5a59fce969c2951934a6f52af47bb9e8ccd00c87b08fb3f3c65b759c4091fe9b99db23441f9cf6743d0452fcc68439ea645ffbb0a6b57b53e0406e7f89b50104
   languageName: node
   linkType: hard
 
@@ -464,7 +476,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@zebra-demo/next@workspace:next"
   dependencies:
-    "@networkteam/zebra": ^0.8.0
+    "@networkteam/zebra": ^0.9.0
     "@next/font": 13.2.4
     "@types/node": 18.15.3
     "@types/react": 18.0.28
@@ -2415,6 +2427,13 @@ __metadata:
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
+  languageName: node
+  linkType: hard
+
+"loglevel@npm:^1.8.0":
+  version: 1.8.1
+  resolution: "loglevel@npm:1.8.1"
+  checksum: a1a62db40291aaeaef2f612334c49e531bff71cc1d01a2acab689ab80d59e092f852ab164a5aedc1a752fdc46b7b162cb097d8a9eb2cf0b299511106c29af61d
   languageName: node
   linkType: hard
 

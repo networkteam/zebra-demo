@@ -1,0 +1,23 @@
+{
+  "packages": [
+    "nodejs@18",
+    "github:NixOS/nixpkgs/dd5621df6dcb90122b50da5ec31c411a0de3e538#nodejs_18.pkgs.yarn",
+    "php@8.1",
+    "php81Extensions.gd@latest",
+    "php81Extensions.pdo@latest",
+    "php81Packages.composer@latest",
+    "nginx@latest",
+    "postgresql@13",
+    "path:devbox.d/flakes/grazer"
+  ],
+  "include": ["github:networkteam/devbox-plugins?dir=postgresql"],
+  "shell": {
+  },
+  "env": {
+    "FLOW_CONTEXT": "Development/Devbox",
+    "NGINX_WEB_PORT": "8000",
+    "NGINX_WEB_ROOT": "../../../neos/Web",
+    "NEOS_BASE_URL": "http://localhost:8000",
+    "DATABASE_NAME": "neos"
+  }
+}

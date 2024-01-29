@@ -1,0 +1,148 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "nginx@latest": {
+      "last_modified": "2024-01-14T03:55:27Z",
+      "plugin_version": "0.0.4",
+      "resolved": "github:NixOS/nixpkgs/dd5621df6dcb90122b50da5ec31c411a0de3e538#nginx",
+      "source": "devbox-search",
+      "version": "1.24.0",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/2rdq0vxgdbr2rdrm99i5jsn7zhxcq82z-nginx-1.24.0"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/l9f8ksvdj3v11bzjgm03nakasviidrq4-nginx-1.24.0"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/7ig6si0m89lk73x15f8m4zn9f915196r-nginx-1.24.0"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/n644pf806sqb6dji2bgx4n5cd50cc9ih-nginx-1.24.0"
+        }
+      }
+    },
+    "nodejs@18": {
+      "last_modified": "2024-01-14T03:55:27Z",
+      "resolved": "github:NixOS/nixpkgs/dd5621df6dcb90122b50da5ec31c411a0de3e538#nodejs_18",
+      "source": "devbox-search",
+      "version": "18.19.0",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/jvp3jsc9dwn64ycnjalw959811lj7x3g-nodejs-18.19.0"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/0b7li2bh1zl86dn2zbcwyrjp7wbbg1q9-nodejs-18.19.0"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/s87scp45c388gaa4jd27kyh66hr4vfwb-nodejs-18.19.0"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/6fy84r0hj7vdqzdzjn9gva18fzdl510z-nodejs-18.19.0"
+        }
+      }
+    },
+    "php81Extensions.gd@latest": {
+      "last_modified": "2023-12-31T07:44:09Z",
+      "resolved": "github:NixOS/nixpkgs/d44d59d2b5bd694cd9d996fd8c51d03e3e9ba7f7#php81Extensions.gd",
+      "source": "devbox-search",
+      "version": "8.1.27",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/d18pvmy5nyqvg339gbmk7qxxk5flgh2l-php-gd-8.1.27"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/a53h71cma4k55a26rbccrhcr3r9gik3i-php-gd-8.1.27"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/fwz4dz5hdzyw0r92d96g0b7xxis6ph5s-php-gd-8.1.27"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/q0jxg6vm96y0dgcmfymn9swh9sjqjczc-php-gd-8.1.27"
+        }
+      }
+    },
+    "php81Extensions.pdo@latest": {
+      "last_modified": "2023-12-31T07:44:09Z",
+      "resolved": "github:NixOS/nixpkgs/d44d59d2b5bd694cd9d996fd8c51d03e3e9ba7f7#php81Extensions.pdo",
+      "source": "devbox-search",
+      "version": "8.1.27",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/mv3g581p0zxbzh6kqdbbipyrg6lj3cl9-php-pdo-8.1.27"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/w0jaiia4n53ri43ih82sbmrmzz647qbc-php-pdo-8.1.27"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/zbrzlgyhi4smm9yqk1xd3shck9qx4sp3-php-pdo-8.1.27"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/jgmgv9vb4rabw67da1j0kphlbkprclmk-php-pdo-8.1.27"
+        }
+      }
+    },
+    "php81Packages.composer@latest": {
+      "last_modified": "2023-12-31T07:44:09Z",
+      "resolved": "github:NixOS/nixpkgs/d44d59d2b5bd694cd9d996fd8c51d03e3e9ba7f7#php81Packages.composer",
+      "source": "devbox-search",
+      "version": "2.6.6",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/hkwddzvkhp0wflbr89kgrcdxcaka6xsl-composer-2.6.6"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/mxkl33is43hp270xjx3yja3wgp0l7wm9-composer-2.6.6"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/w1zza8l6705ykindb7f3blya870l025m-composer-2.6.6"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/yp6hajcjs43qhz6a9nipwksznr05hgb3-composer-2.6.6"
+        }
+      }
+    },
+    "php@8.1": {
+      "last_modified": "2023-12-31T07:44:09Z",
+      "plugin_version": "0.0.3",
+      "resolved": "github:NixOS/nixpkgs/d44d59d2b5bd694cd9d996fd8c51d03e3e9ba7f7#php81",
+      "source": "devbox-search",
+      "version": "8.1.27",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/8mdskb6s4galj88cb77b36n62fq9vms5-php-with-extensions-8.1.27"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/1rfwd4naw3k00kamjm2icjxgslhsidss-php-with-extensions-8.1.27"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/bi67zyvjx5xmyd9hqvb8a5pv4sbz1nka-php-with-extensions-8.1.27"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/8fxjyzj1w58p6jmln3zsx1xasd53q2d9-php-with-extensions-8.1.27"
+        }
+      }
+    },
+    "postgresql@13": {
+      "last_modified": "2022-05-18T02:28:07Z",
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/52dc75a4fee3fdbcb792cb6fba009876b912bfe0#postgresql",
+      "source": "devbox-search",
+      "version": "13.6",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/881zgzrp4i9n94299yq459c5w51828r0-postgresql-13.6"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/dxxs5ydqi4a627ssl4699qfwlv3g7yfy-postgresql-13.6"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/9likd3n1ph8ixmzn79l5sxafi0zxyq8m-postgresql-13.6"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/f90wahxk60kajw4mmqbyh61d6vii7qyb-postgresql-13.6"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+Neos:
+  Flow:
+    core:
+      # Note: We need to set this explicitly, otherwise the links from Nix will resolve to different paths.
+      #       It should resolve to an absolute path for use in CLI and PHP-FPM.
+      phpBinaryPathAndFilename: '%env:PHPRC%/../../.devbox/nix/profile/default/bin/php'
+
+    persistence:
+      backendOptions:
+        dbname: 'neos'
+        driver: 'pdo_pgsql'
+        charset: 'utf8'
+        user: null
+        password: null
+        host: null
+        port: null

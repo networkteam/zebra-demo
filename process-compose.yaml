@@ -1,0 +1,29 @@
+version: "0.5"
+
+processes:
+  yarn:install:
+    command: yarn install
+
+  neos:setup:
+    working_dir: neos
+    command: composer install && ./flow doctrine:migrate && ./flow site:import --package-key Zebra.Site
+    depends_on:
+      postgresql:createdb:
+        condition: process_completed_successfully
+
+  next:dev:
+    working_dir: next
+    command: yarn dev
+    depends_on:
+      yarn:install:
+        condition: process_completed_successfully
+    availability:
+      restart: "always"
+
+  grazer:
+    command: grazer
+    environment:
+      - GZ_REVALIDATE_TOKEN=a-secret-token
+      - GZ_NEXT_REVALIDATE_URL=http://localhost:3000/api/revalidate
+      - GZ_NEOS_BASE_URL=http://localhost:8081/
+      - GZ_VERBOSE=true

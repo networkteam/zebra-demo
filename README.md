@@ -4,22 +4,28 @@ This project uses Next.js as the frontend and Neos as (kind of headless) CMS.
 
 ## Development setup
 
+### Using Devbox
+
+Install Devbox if you haven't already:
+
+https://www.jetpack.io/devbox/docs/installing_devbox/
+
+Start all services:
+
 ```sh
-# Copy env file
-cp neos/.env.dist neos/.env
+devbox services up
+```
 
-# Install dependencies
-yarn install
+This will create the database and import the site.
 
-# Start development server
-yarn dev
+Create a backend user:
 
-# While the dev server is running, setup the database schema and import the zebra demo site
-yarn setup
-
+```sh
 # Create a new admin user
-./neos/flow user:create --roles Administrator admin password Armin Admin
+./neos/flow user:create --roles Administrator admin password Zed Zebra
 ```
 
 Frontend: http://localhost:3000
 Backend: http://localhost:3000/neos
+
+> Note: The frontend and backend are accessed through Next.js.

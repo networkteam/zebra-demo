@@ -6,6 +6,7 @@ processes:
 
   neos:setup:
     working_dir: neos
+    # TODO Import site only if not yet imported!
     command: composer install && ./flow doctrine:migrate && ./flow site:import --package-key Zebra.Site
     depends_on:
       postgresql:createdb:
@@ -25,5 +26,5 @@ processes:
     environment:
       - GZ_REVALIDATE_TOKEN=a-secret-token
       - GZ_NEXT_REVALIDATE_URL=http://localhost:3000/api/revalidate
-      - GZ_NEOS_BASE_URL=http://localhost:8081/
+      - GZ_NEOS_BASE_URL=$NEOS_BASE_URL
       - GZ_VERBOSE=true

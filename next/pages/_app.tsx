@@ -1,9 +1,9 @@
 import '../styles/global.css';
 import '../styles/tailwind.css';
 
-import { Bayon } from "next/font/google";
 import { AnimatePresence } from 'framer-motion';
 import type { AppProps } from 'next/app';
+import { Bayon } from 'next/font/google';
 
 const bayon = Bayon({
   weight: '400',

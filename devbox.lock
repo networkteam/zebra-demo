@@ -42,26 +42,6 @@
         }
       }
     },
-    "php81Extensions.gd@latest": {
-      "last_modified": "2023-12-31T07:44:09Z",
-      "resolved": "github:NixOS/nixpkgs/d44d59d2b5bd694cd9d996fd8c51d03e3e9ba7f7#php81Extensions.gd",
-      "source": "devbox-search",
-      "version": "8.1.27",
-      "systems": {
-        "aarch64-darwin": {
-          "store_path": "/nix/store/d18pvmy5nyqvg339gbmk7qxxk5flgh2l-php-gd-8.1.27"
-        },
-        "aarch64-linux": {
-          "store_path": "/nix/store/a53h71cma4k55a26rbccrhcr3r9gik3i-php-gd-8.1.27"
-        },
-        "x86_64-darwin": {
-          "store_path": "/nix/store/fwz4dz5hdzyw0r92d96g0b7xxis6ph5s-php-gd-8.1.27"
-        },
-        "x86_64-linux": {
-          "store_path": "/nix/store/q0jxg6vm96y0dgcmfymn9swh9sjqjczc-php-gd-8.1.27"
-        }
-      }
-    },
     "php81Extensions.pdo@latest": {
       "last_modified": "2023-12-31T07:44:09Z",
       "resolved": "github:NixOS/nixpkgs/d44d59d2b5bd694cd9d996fd8c51d03e3e9ba7f7#php81Extensions.pdo",

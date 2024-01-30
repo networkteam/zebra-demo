@@ -3,35 +3,32 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
+    flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = {nixpkgs, ...}: let
-    # you can also put any architecture you want to support here
-    # i.e. aarch64-darwin for never M1/2 macbooks
-    system = "aarch64-darwin";
-    pname = "grazer";
-  in {
-    packages.${system} = let
-      pkgs = nixpkgs.legacyPackages.${system}; # this gives us access to nixpkgs as we are used to
-    in {
-      default = pkgs.buildGoModule {
-        name = pname;
-        src = pkgs.fetchFromGitHub {
-          owner = "networkteam";
-          repo = "grazer";
-          rev = "v0.4.0";
-          hash = "sha256-/6JGzq3k3UYls6baqfVf+UHVCvwLyqQmLooV5qbm5jw=";
+  outputs = { self, nixpkgs, flake-utils, ... }:
+    flake-utils.lib.eachSystem [ "aarch64-darwin" "x86_64-linux" "x86_64-darwin" ] (system:
+      let
+        pkgs = nixpkgs.legacyPackages.${system};
+      in
+      {
+        packages.default = pkgs.buildGoModule {
+          pname = "grazer";
+          version = "0.4.0";
+          src = pkgs.fetchFromGitHub {
+            owner = "networkteam";
+            repo = "grazer";
+            rev = "v0.4.0";
+            sha256 = "sha256-/6JGzq3k3UYls6baqfVf+UHVCvwLyqQmLooV5qbm5jw=";
+          };
+
+          vendorHash = "sha256-TyVOQKvIssWhtxoZP7P2jz5dvXqCnA+h75e1DM6swt0";
+
+          subPackages = ["cmd"];
+
+          postBuild = ''
+            mv $GOPATH/bin/cmd $GOPATH/bin/grazer
+          '';
         };
-
-        vendorHash = "sha256-TyVOQKvIssWhtxoZP7P2jz5dvXqCnA+h75e1DM6swt0";
-
-        subPackages = ["cmd"];
-
-        # Rename the binary after build
-        postBuild = ''
-          mv $GOPATH/bin/cmd $GOPATH/bin/grazer
-        '';
-      };
-    };
-  };
+      });
 }

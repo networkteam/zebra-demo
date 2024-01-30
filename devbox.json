@@ -3,7 +3,7 @@
     "nodejs@18",
     "github:NixOS/nixpkgs/dd5621df6dcb90122b50da5ec31c411a0de3e538#nodejs_18.pkgs.yarn",
     "php@8.1",
-    "php81Extensions.gd@latest",
+    "github:NixOS/nixpkgs/d44d59d2b5bd694cd9d996fd8c51d03e3e9ba7f7#php81Extensions.gd",
     "php81Extensions.pdo@latest",
     "php81Packages.composer@latest",
     "nginx@latest",

@@ -1,12 +1,14 @@
-import { ContentComponent, ContentRegistry, NeosContentNode, useNode } from '@networkteam/zebra';
+import { ContextProps, NeosContentNode } from '@networkteam/zebra';
+import { ContentComponent, NodeRenderer, useNode } from '@networkteam/zebra/server';
 
-const ContentReferences = () => {
-  const node = useNode();
+const ContentReferences = async ({ ctx }: { ctx: ContextProps }) => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const node = await useNode(ctx)();
 
   return (
-    <ContentComponent>
+    <ContentComponent ctx={ctx}>
       {node.children?.map((reference: NeosContentNode) => (
-        <ContentRegistry key={reference.identifier} node={reference} />
+        <NodeRenderer key={reference.identifier} ctx={ctx} node={reference} />
       ))}
     </ContentComponent>
   );

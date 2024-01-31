@@ -1,15 +1,13 @@
 import { ContextProps } from '@networkteam/zebra';
-import { ContentComponent, Editable, useInBackend, useNode } from '@networkteam/zebra/server';
+import { ContentComponent, Editable, useInBackend, withNode } from '@networkteam/zebra/server';
 
 import { baseClasses } from '@/lib/utils/baseClasses';
 
 import Hero from '../ui/Hero';
 
 const ContentHero = async ({ ctx }: { ctx: ContextProps }) => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const node = await useNode(ctx)();
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const inBackend = useInBackend(ctx);
+  const node = await withNode(ctx);
+  const inBackend = ctx.inBackend;
 
   return (
     <ContentComponent ctx={ctx}>

@@ -1,13 +1,12 @@
 import { ContextProps } from '@networkteam/zebra';
-import { ContentCollection, ContentComponent, useNode } from '@networkteam/zebra/server';
+import { ContentCollection, ContentComponent, withNode } from '@networkteam/zebra/server';
 
 import { baseClasses } from '@/lib/utils/baseClasses';
 
 import Section from '../ui/Section';
 
 const ContentSection = async ({ ctx }: { ctx: ContextProps }) => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const node = await useNode(ctx)();
+  const node = await withNode(ctx);
 
   return (
     <ContentComponent ctx={ctx}>

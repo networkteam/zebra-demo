@@ -1,5 +1,5 @@
 import { ContextProps } from '@networkteam/zebra';
-import { useNode } from '@networkteam/zebra/server';
+import { withNode } from '@networkteam/zebra/server';
 import { ReactNode } from 'react';
 
 const DocumentBackendOnlyPage = async ({
@@ -11,8 +11,7 @@ const DocumentBackendOnlyPage = async ({
   prefix?: string;
   children?: ReactNode;
 }) => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const node = await useNode(ctx)();
+  const node = await withNode(ctx);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-dark">

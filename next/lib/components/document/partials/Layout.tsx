@@ -1,7 +1,6 @@
 import { ContextProps } from '@networkteam/zebra';
-import { useInBackend, useMeta, useNode } from '@networkteam/zebra/server';
+import { useInBackend, withMeta, withNode } from '@networkteam/zebra/server';
 import classNames from 'classnames';
-import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
 
 import LogoTargetWrapper from '../../layout/LogoTargetWrapper';
@@ -9,12 +8,9 @@ import TransitionFadeWrapper from '../../layout/TransitionFadeWrapper';
 import Header from './Header';
 
 const Layout = async ({ ctx, children }: { ctx: ContextProps; children: ReactNode }) => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const node = await useNode(ctx)();
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const { isRootPage, mainNavigation } = await useMeta(ctx)();
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const inBackend = useInBackend(ctx);
+  const node = await withNode(ctx);
+  const { isRootPage, mainNavigation } = await withMeta(ctx);
+  const inBackend = ctx.inBackend;
 
   return (
     <div

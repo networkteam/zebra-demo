@@ -3,8 +3,8 @@ import {
   ContentCollection,
   ContentCollectionProvider,
   ContentComponent,
-  useContentComponent,
-  useNode,
+  withContentComponent,
+  withNode,
 } from '@networkteam/zebra/server';
 import classNames from 'classnames';
 
@@ -13,8 +13,7 @@ import { baseClasses } from '@/lib/utils/baseClasses';
 import Multicolumn from '../ui/MultiColumn';
 
 const ContentMulticolumn = async ({ ctx }: { ctx: ContextProps }) => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const node = await useNode(ctx)();
+  const node = await withNode(ctx);
 
   return (
     <ContentComponent ctx={ctx} className={classNames('w-full', baseClasses(node))}>
@@ -26,10 +25,8 @@ const ContentMulticolumn = async ({ ctx }: { ctx: ContextProps }) => {
 };
 
 const ContentMulticolumnColumn = async ({ ctx }: { ctx: ContextProps }) => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const node = await useNode(ctx)();
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const contentComponentProps = await useContentComponent(ctx)();
+  const node = await withNode(ctx);
+  const contentComponentProps = await withContentComponent(ctx);
 
   return (
     <Multicolumn.Column

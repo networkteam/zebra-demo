@@ -1,16 +1,12 @@
 import { ContextProps } from '@networkteam/zebra';
-import { ContentComponent, useInBackend, useNode } from '@networkteam/zebra/server';
+import { ContentComponent, useInBackend, withNode } from '@networkteam/zebra/server';
 
 import { baseClasses } from '@/lib/utils/baseClasses';
 
 import ImageComponent from '../ui/Image';
 
 const ContentImage = async ({ ctx }: { ctx: ContextProps }) => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const node = await useNode(ctx)();
-
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const inBackend = useInBackend(ctx);
+  const node = await withNode(ctx);
 
   return (
     <ContentComponent ctx={ctx}>
@@ -21,7 +17,7 @@ const ContentImage = async ({ ctx }: { ctx: ContextProps }) => {
         fullwidth={node.properties.fullwidth}
         link={node.properties.link}
         className={baseClasses(node)}
-        inBackend={inBackend}
+        inBackend={ctx.inBackend}
       />
     </ContentComponent>
   );

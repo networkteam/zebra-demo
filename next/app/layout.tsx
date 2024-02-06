@@ -26,7 +26,7 @@ export async function generateMetadata(
   },
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const routePath = params.slug && Array.isArray(params.slug) ? params.slug.join('/') : '';
+  const routePath = params.slug && Array.isArray(params.slug) ? params.slug.join('/') : '/';
   const neosData = await loadDocumentPropsCached(routePath);
 
   if (!neosData) {

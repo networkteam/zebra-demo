@@ -1,9 +1,15 @@
 import { loadDocumentPropsCached, NodeRenderer } from '@networkteam/zebra/server';
+import { DataLoaderOptions } from '@networkteam/zebra/types';
 
 const NotFound = async () => {
   const routePath = '/404';
-
-  const neosData = await loadDocumentPropsCached(routePath);
+  const dataLoaderOptions: DataLoaderOptions = {
+    cache: 'default',
+    next: {
+      tags: ['document', `document:${routePath}`],
+    },
+  };
+  const neosData = await loadDocumentPropsCached(routePath, dataLoaderOptions);
   if (!neosData) {
     console.warn('/404 document not found');
     return (
@@ -20,6 +26,7 @@ const NotFound = async () => {
         routePath,
         currentNodeIdentifier: neosData.node.identifier,
         documentNodeIdentifier: neosData.node.identifier,
+        dataLoaderOptions,
       }}
       node={neosData.node}
     />

@@ -183,9 +183,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@networkteam/zebra@npm:0.10.1-b25b914.0":
-  version: 0.10.1-b25b914.0
-  resolution: "@networkteam/zebra@npm:0.10.1-b25b914.0"
+"@networkteam/zebra@npm:0.10.1-b0fb4c9.0":
+  version: 0.10.1-b0fb4c9.0
+  resolution: "@networkteam/zebra@npm:0.10.1-b0fb4c9.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     "@supercharge/promise-pool": ^2.3.2
@@ -194,7 +194,7 @@ __metadata:
     next: ^12.2.0 || ^13.0.0 || ^14.0.0
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: 3ed42d8425373dd0a53f93a811aa77a415b835e0116403cd16ddd42b76ad4b448d33ee953745deee79b6e61c358b9ab3ba0fd944d9f4d09ad94df1697e43a27d
+  checksum: 6b8536a65a2857202d12b12399f568b410a130b6d933973084def372171ff66b359943a2d8f29ce4764df69b21dec3cb1f5fbcc14c9cd3949a1c8885cc16a3b1
   languageName: node
   linkType: hard
 
@@ -524,7 +524,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@zebra-demo/next@workspace:next"
   dependencies:
-    "@networkteam/zebra": 0.10.1-b25b914.0
+    "@networkteam/zebra": 0.10.1-b0fb4c9.0
     "@types/node": 18.15.3
     "@types/react": ~18.2.0
     "@types/react-dom": 18.0.11

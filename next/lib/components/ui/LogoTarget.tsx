@@ -15,7 +15,6 @@ const LogoTarget = ({ className }: LogoTargetType) => {
   useEffect(() => {
     if (!ref.current) return;
 
-    console.debug('LogoTarget: setLogoTarget', ref.current);
     setLogoTarget(ref.current);
   }, [ref, setLogoTarget]);
 

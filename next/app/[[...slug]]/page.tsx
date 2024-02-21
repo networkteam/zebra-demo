@@ -1,6 +1,14 @@
 import { loadDocumentPropsCached, NodeRenderer } from '@networkteam/zebra/server';
+import { DataLoaderOptions } from '@networkteam/zebra/types';
 import { Metadata, ResolvingMetadata } from 'next';
 import { notFound, redirect } from 'next/navigation';
+
+const dataLoaderOptionsFor = (routePath: string): DataLoaderOptions => ({
+  cache: 'default',
+  next: {
+    tags: ['document', `document:${routePath}`],
+  },
+});
 
 export async function generateMetadata({
   params,
@@ -10,7 +18,7 @@ export async function generateMetadata({
   };
 }): Promise<Metadata> {
   const routePath = params.slug && Array.isArray(params.slug) ? params.slug.join('/') : '/';
-  const neosData = await loadDocumentPropsCached(routePath);
+  const neosData = await loadDocumentPropsCached(routePath, dataLoaderOptionsFor(routePath));
   if (!neosData) {
     return {};
   }
@@ -24,8 +32,8 @@ export async function generateMetadata({
 
 const Page = async ({ params: { slug } }: { params: { slug: string[] } }) => {
   const routePath = slug && Array.isArray(slug) ? slug.join('/') : '/';
-
-  const neosData = await loadDocumentPropsCached(routePath);
+  const dataLoaderOptions = dataLoaderOptionsFor(routePath);
+  const neosData = await loadDocumentPropsCached(routePath, dataLoaderOptions);
 
   if (!neosData) {
     return notFound();
@@ -41,6 +49,7 @@ const Page = async ({ params: { slug } }: { params: { slug: string[] } }) => {
         routePath,
         currentNodeIdentifier: neosData.node.identifier,
         documentNodeIdentifier: neosData.node.identifier,
+        dataLoaderOptions,
       }}
       node={neosData.node}
     />

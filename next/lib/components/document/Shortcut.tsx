@@ -7,7 +7,6 @@ import BackendOnlyPage from './BackendOnlyPage';
 const DocumentShortcut = async ({ ctx }: { ctx: ContextProps }) => {
   // TODO Add dynamic locale support
   const locale: string = 'en';
-
   const node = await withNode(ctx);
 
   return (

@@ -1,5 +1,5 @@
 import { ContextProps } from '@networkteam/zebra';
-import { useInBackend, withMeta, withNode } from '@networkteam/zebra/server';
+import { withMeta, withNode } from '@networkteam/zebra/server';
 import classNames from 'classnames';
 import { ReactNode } from 'react';
 

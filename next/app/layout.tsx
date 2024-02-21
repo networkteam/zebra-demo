@@ -16,27 +16,15 @@ const bayon = Bayon({
   variable: '--font-bayon',
 });
 
-export async function generateMetadata(
-  {
-    params,
-  }: {
-    params: {
-      slug: string[];
-    };
-  },
-  parent: ResolvingMetadata
-): Promise<Metadata> {
-  const routePath = params.slug && Array.isArray(params.slug) ? params.slug.join('/') : '/';
+export async function generateMetadata(): Promise<Metadata> {
+  const routePath = '/';
   const neosData = await loadDocumentPropsCached(routePath);
-
   if (!neosData) {
     return {};
   }
 
-  const { node, site, meta } = neosData;
-
-  const title = meta?.isRootPage ? site.properties.title : `${node.properties.title} – ${site.properties.title}`;
-
+  const { site } = neosData;
+  const title = site.properties.title;
   return {
     title,
   };

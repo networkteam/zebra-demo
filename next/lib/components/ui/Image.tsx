@@ -4,7 +4,7 @@ import Image from 'next/image';
 import DummyImage from '../helper/DummyImage';
 import LinkAugmenter from '../helper/LinkAugmenter';
 
-type Props = {
+export type Props = {
   image: {
     src: string;
     width: number;
@@ -18,13 +18,14 @@ type Props = {
   title: string;
   link: string;
   className: string;
+  inBackend?: boolean;
 };
 
-const ImageComponent = ({ image, altText, fullwidth, title, link, className }: Props) => {
+const ImageComponent = ({ image, altText, fullwidth, title, link, className, inBackend }: Props) => {
   return (
     <>
       {image && image.src ? (
-        <LinkAugmenter href={link} className="block">
+        <LinkAugmenter href={link} className="block" inBackend={inBackend}>
           <Image
             className={classNames(
               'h-auto max-w-full',

@@ -1,14 +1,15 @@
-import { NeosNode, useMeta } from '@networkteam/zebra';
+'use client';
+import { NeosNode } from '@networkteam/zebra';
 import classNames from 'classnames';
 import { AnimationProps, motion } from 'framer-motion';
 import Link from 'next/link';
 import { useContext, useEffect, useState } from 'react';
 
 import LinkAugmenter from '../../helper/LinkAugmenter';
+import { LogoTargetContext } from '../../layout/LogoTargetWrapper';
 import Logo from '../../ui/Logo';
-import { LogoTargetContext } from './Layout';
 
-interface MenuItem {
+export interface MenuItem {
   state: 'normal' | 'current' | 'active' | 'absent';
   label: string;
   menuLevel: number;
@@ -16,7 +17,7 @@ interface MenuItem {
   subItems?: MenuItem[];
 }
 
-interface NeosNavigationNode extends NeosNode {
+export interface NeosNavigationNode extends NeosNode {
   dimensions?: {
     [key: string]: any;
   };
@@ -28,8 +29,7 @@ interface NeosNavigationNode extends NeosNode {
   };
 }
 
-const Header = () => {
-  const { mainNavigation, isRootPage } = useMeta();
+const Header = ({ mainNavigation, inBackend }: { mainNavigation: MenuItem[]; inBackend?: boolean }) => {
   const { logoTarget } = useContext(LogoTargetContext);
   const [targetBoundaries, setTargetBoundaries] = useState<DOMRect | null>(null);
 
@@ -90,7 +90,7 @@ const Header = () => {
     >
       <div className="container relative mx-auto flex items-center justify-end gap-4 px-4">
         <motion.div className="absolute left-4 z-50 w-32" {...logoAnimationProps}>
-          <LinkAugmenter className="block" href="/">
+          <LinkAugmenter className="block" href="/" inBackend={inBackend}>
             <Logo className="transition-colors duration-500" />
           </LinkAugmenter>
         </motion.div>

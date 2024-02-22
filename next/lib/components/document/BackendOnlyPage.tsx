@@ -1,7 +1,17 @@
-import { useNode } from '@networkteam/zebra';
+import { ContextProps } from '@networkteam/zebra';
+import { withNode } from '@networkteam/zebra/server';
+import { ReactNode } from 'react';
 
-const DocumentBackendOnlyPage = ({ prefix, children }: { prefix?: string; children?: React.ReactNode }) => {
-  const node = useNode();
+const DocumentBackendOnlyPage = async ({
+  ctx,
+  prefix,
+  children,
+}: {
+  ctx: ContextProps;
+  prefix?: string;
+  children?: ReactNode;
+}) => {
+  const node = await withNode(ctx);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-dark">

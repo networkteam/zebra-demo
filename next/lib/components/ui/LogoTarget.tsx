@@ -1,7 +1,8 @@
+'use client';
 import classNames from 'classnames';
 import { useContext, useEffect, useRef } from 'react';
 
-import { LogoTargetContext } from '../document/partials/Layout';
+import { LogoTargetContext } from '../layout/LogoTargetWrapper';
 
 type LogoTargetType = {
   className?: string;

@@ -1,12 +1,13 @@
-import { ContentCollection, ContentComponent } from '@networkteam/zebra';
+import { ContextProps } from '@networkteam/zebra';
+import { ContentCollection, ContentComponent } from '@networkteam/zebra/server';
 
 import Stage from '../ui/Stage';
 
-const ContentStage = () => {
+const ContentStage = ({ ctx }: { ctx: ContextProps }) => {
   return (
-    <ContentComponent>
+    <ContentComponent ctx={ctx}>
       <Stage>
-        <ContentCollection nodeName="content" />
+        <ContentCollection ctx={ctx} nodeName="content" />
       </Stage>
     </ContentComponent>
   );

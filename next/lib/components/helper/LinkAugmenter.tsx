@@ -1,14 +1,15 @@
-import { useInBackend } from '@networkteam/zebra';
 import Link from 'next/link';
+import { ReactNode } from 'react';
 
 import { isExternalUri } from '@/lib/utils/externalUri';
 
-type LinkAugmenterProps = {
+export type Props = {
   href?: string;
   openInNewWindow?: boolean;
   fallbackTag?: keyof JSX.IntrinsicElements;
   className?: string;
-  children: React.ReactNode;
+  children: ReactNode;
+  inBackend?: boolean;
 };
 
 export default function LinkAugmenter({
@@ -17,9 +18,8 @@ export default function LinkAugmenter({
   fallbackTag: Tag,
   className,
   children,
-}: LinkAugmenterProps) {
-  const inBackend = useInBackend();
-
+  inBackend,
+}: Props) {
   if (!href || inBackend) {
     if (Tag) {
       return <Tag className={className}>{children}</Tag>;

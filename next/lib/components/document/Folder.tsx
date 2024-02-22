@@ -1,11 +1,12 @@
-import { useRouter } from 'next/router';
+import { ContextProps } from '@networkteam/zebra';
 
 import BackendOnlyPage from './BackendOnlyPage';
 
-const DocumentFolder = () => {
-  const router = useRouter();
+const DocumentFolder = async ({ ctx }: { ctx: ContextProps }) => {
+  // TODO Add dynamic locale support
+  const locale: string = 'en';
 
-  return <BackendOnlyPage prefix={router.locale === 'de' ? 'Ordner' : 'Folder'} />;
+  return <BackendOnlyPage ctx={ctx} prefix={locale === 'de' ? 'Ordner' : 'Folder'} />;
 };
 
 export default DocumentFolder;

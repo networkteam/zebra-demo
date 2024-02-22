@@ -1,10 +1,10 @@
 import { loadDocumentPropsCached, NodeRenderer } from '@networkteam/zebra/server';
 import { DataLoaderOptions } from '@networkteam/zebra/types';
-import { Metadata, ResolvingMetadata } from 'next';
+import { Metadata } from 'next';
 import { notFound, redirect } from 'next/navigation';
 
 const dataLoaderOptionsFor = (routePath: string): DataLoaderOptions => ({
-  cache: 'default',
+  cache: 'force-cache',
   next: {
     tags: ['document', `document:${routePath}`],
   },

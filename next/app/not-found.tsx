@@ -4,7 +4,7 @@ import { DataLoaderOptions } from '@networkteam/zebra/types';
 const NotFound = async () => {
   const routePath = '/404';
   const dataLoaderOptions: DataLoaderOptions = {
-    cache: 'default',
+    cache: 'force-cache',
     next: {
       tags: ['document', `document:${routePath}`],
     },

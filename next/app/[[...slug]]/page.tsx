@@ -1,7 +1,7 @@
 import { loadDocumentPropsCached, NodeRenderer } from '@networkteam/zebra/server';
 import { DataLoaderOptions } from '@networkteam/zebra/types';
 import { Metadata } from 'next';
-import { notFound, redirect } from 'next/navigation';
+import { notFound, permanentRedirect, redirect } from 'next/navigation';
 
 const dataLoaderOptionsFor = (routePath: string): DataLoaderOptions => ({
   cache: 'force-cache',
@@ -19,7 +19,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const routePath = params.slug && Array.isArray(params.slug) ? params.slug.join('/') : '/';
   const neosData = await loadDocumentPropsCached(routePath, dataLoaderOptionsFor(routePath));
-  if (!neosData) {
+  if (!neosData || !('node' in neosData)) {
     return {};
   }
 
@@ -37,6 +37,13 @@ const Page = async ({ params: { slug } }: { params: { slug: string[] } }) => {
 
   if (!neosData) {
     return notFound();
+  }
+
+  if ('redirect' in neosData) {
+    if (neosData.redirect.statusCode === 308 || neosData.redirect.statusCode === 301) {
+      permanentRedirect(neosData.redirect.targetPath);
+    }
+    redirect(neosData.redirect.targetPath);
   }
 
   if (neosData?.node.nodeType === 'Neos.Neos:Shortcut') {

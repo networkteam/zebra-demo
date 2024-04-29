@@ -1,11 +1,12 @@
-import { ContentCollection } from '@networkteam/zebra';
+import { ContextProps } from '@networkteam/zebra';
+import { ContentCollection } from '@networkteam/zebra/server';
 
 import Layout from './partials/Layout';
 
-const DocumentPage = () => {
+const DocumentPage = ({ ctx }: { ctx: ContextProps }) => {
   return (
-    <Layout>
-      <ContentCollection nodeName="main" />
+    <Layout ctx={ctx}>
+      <ContentCollection ctx={ctx} nodeName="main" />
     </Layout>
   );
 };

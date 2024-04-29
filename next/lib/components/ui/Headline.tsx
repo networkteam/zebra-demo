@@ -1,15 +1,17 @@
+'use client';
 import classNames from 'classnames';
+import { ReactNode } from 'react';
 
 import { useTheme } from '@/lib/utils/themeContext';
 
-type HeadlineProps = {
-  children: React.ReactNode;
+export type Props = {
+  children: ReactNode;
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   size?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   className?: string;
 };
 
-const Headline = ({ children, as = 'h1', size, className }: HeadlineProps) => {
+const Headline = ({ children, as = 'h1', size, className }: Props) => {
   const Component = as;
   const theme = useTheme();
 

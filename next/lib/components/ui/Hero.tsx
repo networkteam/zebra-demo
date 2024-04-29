@@ -1,8 +1,9 @@
+'use client';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 import useTypewriter from '@/lib/hooks/typewriter';
 
@@ -21,13 +22,15 @@ type HeroProps = {
 };
 
 const Hero = ({ title, subtitle, description, image, typewriterEnabled, className }: HeroProps) => {
-  const router = useRouter();
   const { currentText, startTyping, reverseTyping } = useTypewriter({
     duration: 800,
     reverseDuration: 300,
   });
 
   const landscape = image && image.width > image.height;
+
+  const pathname = usePathname();
+  const [currentPathname, setCurrentPathname] = useState(pathname);
 
   useEffect(() => {
     if (!typewriterEnabled || typeof title !== 'string') return;
@@ -40,6 +43,10 @@ const Hero = ({ title, subtitle, description, image, typewriterEnabled, classNam
   useEffect(() => {
     if (!typewriterEnabled || typeof title !== 'string') return;
 
+    /*
+    Hier haben wir auch wieder das Problem, dass wir keine Events auf dem Router mehr haben.
+    Wir versuchen einfach mal den Pfad im State zu speichern und bei Änderung zu vergleichen und reverse() aufzurufen.
+
     const reverse = (routePath: string) => {
       if (routePath === router.asPath) return;
 
@@ -51,9 +58,15 @@ const Hero = ({ title, subtitle, description, image, typewriterEnabled, classNam
     return () => {
       router.events.off('routeChangeStart', reverse);
     };
+    */
+
+    if (pathname !== currentPathname) {
+      reverseTyping(title);
+      setCurrentPathname(pathname);
+    }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [router]);
+  }, [pathname]);
 
   return (
     <section

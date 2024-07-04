@@ -10,7 +10,7 @@
     "next:dev": "yarn dev"
   },
   "dependencies": {
-    "@networkteam/zebra": "^1.0.0",
+    "@networkteam/zebra": "next",
     "classnames": "^2.3.2",
     "framer-motion": "^10.3.4",
     "next": "14.1.0",

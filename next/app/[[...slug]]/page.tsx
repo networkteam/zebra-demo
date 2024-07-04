@@ -6,7 +6,7 @@ import { notFound, permanentRedirect, redirect } from 'next/navigation';
 const dataLoaderOptionsFor = (routePath: string): DataLoaderOptions => ({
   cache: 'force-cache',
   next: {
-    tags: ['document', `document:${routePath}`],
+    tags: ['document'],
   },
 });
 

@@ -3,20 +3,6 @@
  <site name="Zebra" state="1" siteResourcesPackageKey="Zebra.Site" siteNodeName="site">
   <nodes formatVersion="2.0">
    <node identifier="d08c18c3-f691-4aa0-86aa-6e215ec43a4a" nodeName="site">
-    <variant sortingIndex="100" workspace="live" nodeType="Zebra.Site:Document.RootPage" version="2" removed="" hidden="" hiddenInIndex="">
-     <dimensions>
-      <language>de</language>
-     </dimensions>
-     <accessRoles __type="array"/>
-     <creationDateTime __type="object" __classname="DateTime">2022-12-16T11:56:10+00:00</creationDateTime>
-     <lastModificationDateTime __type="object" __classname="DateTime">2023-03-13T09:49:44+00:00</lastModificationDateTime>
-     <lastPublicationDateTime __type="object" __classname="DateTime">2023-03-13T09:49:44+00:00</lastPublicationDateTime>
-     <properties>
-      <title __type="string">site</title>
-      <titlePostfix __type="string"></titlePostfix>
-      <uriPathSegment __type="string">site</uriPathSegment>
-     </properties>
-    </variant>
     <variant sortingIndex="100" workspace="live" nodeType="Zebra.Site:Document.RootPage" version="4" removed="" hidden="" hiddenInIndex="">
      <dimensions>
       <language>en</language>
@@ -27,6 +13,20 @@
      <lastPublicationDateTime __type="object" __classname="DateTime">2023-03-17T14:17:39+00:00</lastPublicationDateTime>
      <properties>
       <title __type="string">Zebra</title>
+      <titlePostfix __type="string"></titlePostfix>
+      <uriPathSegment __type="string">site</uriPathSegment>
+     </properties>
+    </variant>
+    <variant sortingIndex="100" workspace="live" nodeType="Zebra.Site:Document.RootPage" version="2" removed="" hidden="" hiddenInIndex="">
+     <dimensions>
+      <language>de</language>
+     </dimensions>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2022-12-16T11:56:10+00:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2023-03-13T09:49:44+00:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2023-03-13T09:49:44+00:00</lastPublicationDateTime>
+     <properties>
+      <title __type="string">site</title>
       <titlePostfix __type="string"></titlePostfix>
       <uriPathSegment __type="string">site</uriPathSegment>
      </properties>
@@ -135,6 +135,47 @@
         </properties>
        </variant>
       </node>
+      <node identifier="03b3e72b-d386-4bfe-9b83-d2e779fb79fe" nodeName="node-5f5jhtkp5m3fl">
+       <variant sortingIndex="150" workspace="live" nodeType="Zebra.Site:Content.Section" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2024-02-21T17:00:58+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2024-02-21T17:01:25+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2024-02-21T17:01:25+00:00</lastPublicationDateTime>
+        <properties>
+         <theme __type="string">light</theme>
+        </properties>
+       </variant>
+       <node identifier="dbe96ed8-957d-a20f-e53e-9bacd37174ce" nodeName="content">
+        <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>en</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2024-02-21T17:00:58+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2024-02-21T17:01:25+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2024-02-21T17:01:25+00:00</lastPublicationDateTime>
+         <properties/>
+        </variant>
+        <node identifier="106639a7-658f-4cf8-8ba9-a334a91b40de" nodeName="node-9g8mvl9exz691">
+         <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Headline" version="3" removed="" hidden="" hiddenInIndex="">
+          <dimensions>
+           <language>en</language>
+          </dimensions>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2024-02-21T17:01:17+00:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2024-02-21T17:01:25+00:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2024-02-21T17:01:25+00:00</lastPublicationDateTime>
+          <properties>
+           <title __type="string">A headline here</title>
+           <hierarchy __type="string">h1</hierarchy>
+          </properties>
+         </variant>
+        </node>
+       </node>
+      </node>
      </node>
     </node>
     <node identifier="1dc787ba-172f-4f7b-a29e-fd3b3f394070" nodeName="node-ak4wzebznw9nv">
@@ -221,6 +262,184 @@
          <subtitle __type="string">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</subtitle>
          <description __type="string">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.&lt;br&gt;Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</description>
         </properties>
+       </variant>
+      </node>
+     </node>
+    </node>
+    <node identifier="7bd92c28-819b-4713-842f-ec19c6ee9f13" nodeName="node-rbnq8q6yppyen">
+     <variant sortingIndex="194" workspace="live" nodeType="Zebra.Site:Document.Folder" version="4" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>en</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2024-05-08T13:24:08+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2024-07-04T12:10:19+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2024-07-04T12:10:19+00:00</lastPublicationDateTime>
+      <properties>
+       <title __type="string">Articles</title>
+       <uriPathSegment __type="string">articles</uriPathSegment>
+       <metaRobotsNoindex __type="boolean">1</metaRobotsNoindex>
+      </properties>
+     </variant>
+     <node identifier="8bb47220-3028-4b4f-8b09-a6770a890aa4" nodeName="node-046e7w6nfkesk">
+      <variant sortingIndex="550" workspace="live" nodeType="Zebra.Site:Document.Article" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2024-05-08T13:25:44+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2024-05-08T13:25:48+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2024-05-08T13:25:47+00:00</lastPublicationDateTime>
+       <properties>
+        <title __type="string">What to choose: pages or app router in Next.js?</title>
+        <uriPathSegment __type="string">what-to-choose-pages-or-app-router-in-next-js</uriPathSegment>
+       </properties>
+      </variant>
+      <node identifier="5c113154-e0b3-2d42-51e1-a552225f4161" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2024-05-08T13:25:44+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2024-05-08T13:25:48+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2024-05-08T13:25:47+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
+     <node identifier="3a2ad641-3552-4f66-9fd3-6217e1da0f33" nodeName="node-0ibm6drnnhmcy">
+      <variant sortingIndex="850" workspace="live" nodeType="Zebra.Site:Document.Article" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2024-05-08T14:33:20+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2024-05-08T14:34:00+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2024-05-08T14:34:00+00:00</lastPublicationDateTime>
+       <properties>
+        <title __type="string">Introducing Zebra into an existing Next.js application</title>
+        <uriPathSegment __type="string">introducing-zebra-into-an-existing-next-js-application</uriPathSegment>
+       </properties>
+      </variant>
+      <node identifier="85c555b4-d4b6-8a44-9ebd-a97f8596f83b" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2024-05-08T14:33:20+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2024-05-08T14:34:00+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2024-05-08T14:34:00+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
+     <node identifier="246d4849-0a47-49dd-8429-c1076cb57e96" nodeName="node-9tjl5zojrvyul">
+      <variant sortingIndex="950" workspace="live" nodeType="Zebra.Site:Document.Article" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2024-05-08T14:33:55+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2024-05-08T14:34:00+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2024-05-08T14:34:00+00:00</lastPublicationDateTime>
+       <properties>
+        <title __type="string">How to structure your React components into presentational and content components</title>
+        <uriPathSegment __type="string">how-to-structure-your-react-components-into-presentational-and-content-components</uriPathSegment>
+       </properties>
+      </variant>
+      <node identifier="36150d8c-c83b-8e1a-4be2-683354f4f259" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2024-05-08T14:33:55+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2024-05-08T14:34:00+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2024-05-08T14:34:00+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
+     <node identifier="7e071cf7-8ac4-4403-ba1d-70c62ed722fe" nodeName="node-dyl1y0984yccs">
+      <variant sortingIndex="1050" workspace="live" nodeType="Zebra.Site:Document.Article" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2024-05-08T14:37:00+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2024-05-08T14:37:03+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2024-05-08T14:37:03+00:00</lastPublicationDateTime>
+       <properties>
+        <title __type="string">Supporting multiple languages in your Zebra project</title>
+        <uriPathSegment __type="string">supporting-multiple-languages-in-your-zebra-project</uriPathSegment>
+       </properties>
+      </variant>
+      <node identifier="683c738a-60f2-1d89-b913-7754516faeb4" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2024-05-08T14:37:00+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2024-05-08T14:37:03+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2024-05-08T14:37:03+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
+     <node identifier="5142c2b7-ac8b-4984-be0f-3d22a4da2cc1" nodeName="node-meur4wtymdkpf">
+      <variant sortingIndex="750" workspace="live" nodeType="Zebra.Site:Document.Article" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2024-05-08T14:30:23+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2024-05-08T14:31:46+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2024-05-08T14:31:46+00:00</lastPublicationDateTime>
+       <properties>
+        <title __type="string">How to use caching to make your Next.js frontend blazingly fast</title>
+        <uriPathSegment __type="string">how-to-use-caching-to-make-your-next-js-frontend-blazingly-fast</uriPathSegment>
+       </properties>
+      </variant>
+      <node identifier="b31f382b-c7ae-8e5c-4e32-a34c2d2fcf68" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2024-05-08T14:30:23+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2024-05-08T14:31:46+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2024-05-08T14:31:46+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
+     <node identifier="c4710e24-68a0-48ed-aefd-2559ff1494ab" nodeName="node-yk2gjs0lhingm">
+      <variant sortingIndex="650" workspace="live" nodeType="Zebra.Site:Document.Article" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2024-05-08T14:30:02+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2024-05-08T14:31:46+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2024-05-08T14:31:46+00:00</lastPublicationDateTime>
+       <properties>
+        <title __type="string">Use queries to render lists of nodes or arbitrary data</title>
+        <uriPathSegment __type="string">use-queries-to-render-lists-of-nodes-or-arbitrary-data</uriPathSegment>
+       </properties>
+      </variant>
+      <node identifier="6950e2f6-3c01-6a3c-b244-ba2acf0f8105" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2024-05-08T14:30:02+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2024-05-08T14:31:46+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2024-05-08T14:31:46+00:00</lastPublicationDateTime>
+        <properties/>
        </variant>
       </node>
      </node>

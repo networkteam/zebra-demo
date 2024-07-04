@@ -7,7 +7,7 @@ import { revalidateTag } from 'next/cache';
  * fetch cache on any published change in Neos.
  *
  * If suitable, individual route paths could be invalidated based on the payload sent by Neos
- * by using the `revalidateTag` function with the appropriate `document:[routePath]` tag.
+ * by using the `revalidatePath` function with a route path in the payload.
  *
  * Since Next.js will only flush the cache entries the actual re-rendering will be performed
  * lazy on the next request to the affected routes.

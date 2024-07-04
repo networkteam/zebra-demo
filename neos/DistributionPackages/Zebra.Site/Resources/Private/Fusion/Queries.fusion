@@ -1,0 +1,14 @@
+contentApi {
+  queries {
+    # Declare a simple query that can be used to fetch articles
+    articles = Networkteam.Neos.ContentApi:Query.FlowQuery {
+      items = ${q(site).find('[instanceof Zebra.Site:Document.Article]')}
+      itemName = 'node'
+      itemRenderer = Networkteam.Neos.ContentApi:BaseNode
+
+      page = ${params.pagination.page || 0}
+      perPage = ${params.pagination.perPage || 3}
+    }
+  }
+}
+

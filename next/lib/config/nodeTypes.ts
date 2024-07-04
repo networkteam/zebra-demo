@@ -8,6 +8,7 @@ import ContentReferences from '../components/content/References';
 import ContentSection from '../components/content/Section';
 import ContentStage from '../components/content/Stage';
 import ContentText from '../components/content/Text';
+import DocumentArticle from '../components/document/Article';
 import DocumentFolder from '../components/document/Folder';
 import DocumentPage from '../components/document/Page';
 import DocumentShortcut from '../components/document/Shortcut';
@@ -18,6 +19,7 @@ initNodeTypes({
   'Zebra.Site:Document.Page': DocumentPage,
   'Zebra.Site:Document.Folder': DocumentFolder,
   'Zebra.Site:Document.NotFound': DocumentPage,
+  'Zebra.Site:Document.Article': DocumentArticle,
   'Neos.Neos:Shortcut': DocumentShortcut,
 
   // Content

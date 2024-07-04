@@ -1,20 +1,16 @@
-'Zebra.Site:Document.Page':
+'Zebra.Site:Document.Article':
   superTypes:
     'Neos.Neos:Document': true
   ui:
     label: i18n
-    icon: 'icon-file'
+    icon: 'icon-newspaper'
   constraints:
     nodeTypes:
-      'Zebra.Site:Document.RootPage': false
-      'Zebra.Site:Document.NotFound': false
-      'Zebra.Site:Document.Article': false
+      '*': false
   childNodes:
     main:
       type: 'Neos.Neos:ContentCollection'
       constraints:
         nodeTypes:
           '*': false
-          'Zebra.Site:Content.Stage': true
-          'Zebra.Site:Content.Hero': true
           'Zebra.Site:Content.Section': true

@@ -14,7 +14,7 @@ const NotFound = async () => {
   const dataLoaderOptions: DataLoaderOptions = {
     cache: 'force-cache',
     next: {
-      tags: ['document', `document:${routePath}`],
+      tags: ['document'],
     },
   };
   const neosData = await loadDocumentPropsCached(routePath, dataLoaderOptions);

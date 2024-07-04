@@ -2,7 +2,7 @@
   "packages": [
     "nodejs@20",
     "php@8.1",
-    "github:NixOS/nixpkgs/d44d59d2b5bd694cd9d996fd8c51d03e3e9ba7f7#php81Extensions.gd",
+    "php81Extensions.gd@latest",
     "php81Extensions.pdo@latest",
     "php81Packages.composer@latest",
     "nginx@latest",
